@@ -5,24 +5,23 @@ workflows:
         instance_type: mac_mini_m1
         integrations:
             app_store_connect: codemagic
-
-        flutter: stable
         environment:
             ios_signing:
                 distribution_type: app_store  
                 bundle_identifier: com.missionyr.tworoom
+            flutter: stable
         scripts:
             - name: Set up code signing settings on Xcode project
-            script: | 
+              script: | 
                 xcode-project use-profiles
             - name: Get Flutter packages
-            script: | 
+              script: | 
                  flutter packages pub get
             - name: Install pods
-            script: | 
+              script: | 
                 find . -name "Podfile" -execdir pod install /;
-             - name: Flutter build ipa
-            script: | 
+            - name: Flutter build ipa
+              script: | 
                 flutter build ipa --release /
                 --build-name=1.0.0 /
                 --export-options-plist=/Users/builder/export_options.plist
@@ -31,22 +30,15 @@ workflows:
             - /tmp/xcodebuild_logs/*.log
             - flutter_drive.log
         publishing:
-            email:
+           email:
                 recipients:
                     - terasawawaaa@gmail.com
-        notify:
-          success: true
-          failure: true
-        app_store_connect:
-            auth: integration
-
-        # Configuration related to TestFlight (optional)
-        # Note: This action is performed during post-processing.
-            submit_to_testflight: true
-            beta_groups: # Specify the names of beta tester groups that will get access to the build once it has passed beta review.
+                notify:
+                  success: true
+                  failure: true
+           app_store_connect:
+              auth: integration
+              submit_to_testflight: true
+              beta_groups: # Specify the names of beta tester groups that will get access to the build once it has passed beta review.
                 - group name 1
-                - group name 2
-
-        # Configuration related to App Store (optional)
-        # Note: This action is performed during post-processing.
-            submit_to_app_store: false
+              submit_to_app_store: false
