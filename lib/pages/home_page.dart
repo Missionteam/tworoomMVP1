@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_unity_widget/flutter_unity_widget.dart';
 import 'package:flutter_unity_widget_example/providers/users_provider.dart';
-
-import '../widgets/specific/engageButton/engage_dialog.dart';
+import 'package:flutter_unity_widget_example/widgets/specific/sorryButton/sorry_dialog.dart';
 
 class HomePage extends ConsumerStatefulWidget {
   const HomePage({super.key});
@@ -35,16 +34,26 @@ class _HomePageState extends ConsumerState<HomePage> {
             fullscreen: false,
           ),
           Positioned(
-              left: 30,
-              top: 170,
-              width: 100,
+              left: 120,
+              top: 80,
+              width: 200,
+              child: Image.asset('images/whatNowStamp/WaitReply.png')),
+          Positioned(
+              left: 90,
+              top: 245,
+              width: 250,
+              child: Image.asset('images/whatNowStamp/WaitGirl.png')),
+          Positioned(
+              left: 85,
+              top: 510,
+              width: 250,
               child: GestureDetector(
-                child: Image.asset('images/EngageBtn.png'),
+                child: Image.asset('images/SorryForLate.png'),
                 onTap: () {
                   showDialog(
                       context: context,
                       builder: (_) {
-                        return EngageDialog();
+                        return SorryGirdDialog();
                       });
                 },
               )),

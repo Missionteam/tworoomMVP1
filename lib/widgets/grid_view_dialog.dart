@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 
 class GridViewDialog extends StatefulWidget {
   GridViewDialog(
-      {Key? key, required this.Screenpadding, required this.children})
+      {Key? key,
+      this.Screenpadding =
+          const EdgeInsets.only(bottom: 190, left: 20, right: 20, top: 140),
+      required this.children})
       : super(key: key);
   EdgeInsetsGeometry Screenpadding;
   List<Widget> children;

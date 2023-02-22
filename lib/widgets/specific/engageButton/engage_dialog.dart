@@ -93,6 +93,7 @@ class EngageStamps extends StatelessWidget {
               StampButton(imageName: 'Stamp2.png'),
               StampButton(imageName: 'Stamp3.png'),
               StampButton(imageName: 'Stamp4.png'),
+              StampButton(imageName: 'NoStamp.png')
             ],
           ),
         ),
