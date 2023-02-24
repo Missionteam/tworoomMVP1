@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_unity_widget_example/pages/auth/error_screen.dart';
 import 'package:flutter_unity_widget_example/pages/auth/loading_screen.dart';
-import 'package:flutter_unity_widget_example/pages/main_page.dart';
+import 'package:flutter_unity_widget_example/pages/home_page.dart';
 import 'package:flutter_unity_widget_example/pages/auth/sign_in_page.dart';
 
 import '../../providers/auth_provider.dart';
@@ -26,7 +26,7 @@ class AuthChecker extends ConsumerWidget {
     return authState.when(
         data: (data) {
           if (data != null) {
-            return const MainPage();
+            return const HomePage();
           }
           return const SignInPage();
         },

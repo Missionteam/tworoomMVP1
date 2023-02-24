@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_unity_widget_example/pages/auth/auth_checker.dart';
 import 'package:flutter_unity_widget_example/pages/chat_page.dart';
 import 'package:flutter_unity_widget_example/pages/home_page.dart';
 import 'package:flutter_unity_widget_example/pages/my_room_page.dart';
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
   MyApp({super.key});
   final GoRouter _router = GoRouter(
     navigatorKey: _rootNavigatorKey,
-    initialLocation: '/Home',
+    initialLocation: '/Auth_checker',
     routes: <RouteBase>[
       /// Application shell
       ShellRoute(
@@ -53,7 +54,7 @@ class MyApp extends StatelessWidget {
             path: '/Auth_checker',
             pageBuilder: (BuildContext context, GoRouterState state) =>
                 NoTransitionPage(
-              child: const HomePage(),
+              child: const AuthChecker(),
             ),
           ),
 
