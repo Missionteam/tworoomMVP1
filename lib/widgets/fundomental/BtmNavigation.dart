@@ -34,8 +34,8 @@ class ScaffoldWithNavBar extends StatelessWidget {
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.import_contacts_rounded),
-                label: 'Note',
-                backgroundColor: backgroundColor,
+                label: 'Rooms',
+                backgroundColor: Color.fromARGB(255, 255, 255, 255),
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.textsms_outlined),

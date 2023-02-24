@@ -3,14 +3,15 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_unity_widget_example/models/room_id_model.dart';
 import 'package:go_router/go_router.dart';
 
-class RoomGridPage extends ConsumerStatefulWidget {
-  const RoomGridPage({super.key});
+class RoomGridPageTest extends ConsumerStatefulWidget {
+  const RoomGridPageTest({super.key});
 
   @override
-  ConsumerState<ConsumerStatefulWidget> createState() => _RoomGridPageState();
+  ConsumerState<ConsumerStatefulWidget> createState() =>
+      _RoomGridPageTestState();
 }
 
-class _RoomGridPageState extends ConsumerState<RoomGridPage> {
+class _RoomGridPageTestState extends ConsumerState<RoomGridPageTest> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_unity_widget_example/pages/chat_page.dart';
 import 'package:flutter_unity_widget_example/pages/home_page.dart';
 import 'package:flutter_unity_widget_example/pages/my_room_page.dart';
-import 'package:flutter_unity_widget_example/pages/room_page.dart';
+import 'package:flutter_unity_widget_example/pages/room_grid_page.dart';
 import 'package:flutter_unity_widget_example/pages/room_page2.dart';
 import 'package:flutter_unity_widget_example/screens/no_interaction_screen.dart';
 import 'package:flutter_unity_widget_example/screens/orientation_screen.dart';

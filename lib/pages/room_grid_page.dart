@@ -1,243 +1,105 @@
-// ignore_for_file: unused_import, unused_field, must_be_immutable
-
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_unity_widget/flutter_unity_widget.dart';
-import 'package:flutter_unity_widget_example/models/room_id_model.dart';
-import 'package:flutter_unity_widget_example/pages/room_page2.dart';
-import 'package:flutter_unity_widget_example/providers/rooms_provider.dart';
-import 'package:go_router/go_router.dart';
+import 'package:flutter_unity_widget_example/widgets/specific/RoomGridPage/widges_yellow%20copy.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../models/post.dart';
-import '../providers/posts_provider.dart';
-import '../widgets/fundomental/post_widget.dart';
-import './my_page.dart';
+import '../widgets/specific/RoomGridPage/widges_2red.dart';
+import '../widgets/specific/RoomGridPage/widges_green.dart';
+import '../widgets/specific/RoomGridPage/widges_red copy.dart';
+import 'package:dotted_border/dotted_border.dart';
 
-class ChatPage extends ConsumerStatefulWidget {
-  ChatPage({super.key});
+class RoomGridPage extends ConsumerStatefulWidget {
+  const RoomGridPage({super.key});
 
   @override
-  ConsumerState<ConsumerStatefulWidget> createState() => _ChatPageState();
+  ConsumerState<ConsumerStatefulWidget> createState() => _RoomGridPageState();
 }
 
-class _ChatPageState extends ConsumerState<ChatPage> {
-  //get onUnityCreated => null;
-  late UnityWidgetController _unityWidgetController;
-
-  Future<void> sendPost(String text) async {
-    // まずは user という変数にログイン中のユーザーデータを格納します
-    final user = FirebaseAuth.instance.currentUser!;
-    final posterId = user.uid; // ログイン中のユーザーのIDがとれます
-    final posterName = user.displayName!; // Googleアカウントの名前がとれます
-    final posterImageUrl = user.photoURL!; // Googleアカウントのアイコンデータがとれます
-    final roomId = ref.watch(roomIdProvider).id;
-
-    // 先ほど作った postsReference からランダムなIDのドキュメントリファレンスを作成します
-    // doc の引数を空にするとランダムなIDが採番されます
-    final newDocumentReference = ref.read(postsReferenceProvider).doc();
-
-    final newPost = Post(
-      text: text,
-      roomId: roomId,
-      createdAt: Timestamp.now(), // 投稿日時は現在とします
-      posterName: posterName,
-      posterImageUrl: posterImageUrl,
-      posterId: posterId,
-      stamps: '',
-      reference: newDocumentReference,
-    );
-
-    // 先ほど作った newDocumentReference のset関数を実行するとそのドキュメントにデータが保存されます。
-    // 引数として Post インスタンスを渡します。
-    // 通常は Map しか受け付けませんが、withConverter を使用したことにより Post インスタンスを受け取れるようになります。
-    newDocumentReference.set(newPost);
-  }
-
-  // build の外でインスタンスを作ります。
-  final controller = TextEditingController();
-
-  /// この dispose 関数はこのWidgetが使われなくなったときに実行されます。
+class _RoomGridPageState extends ConsumerState<RoomGridPage> {
   @override
-  void dispose() {
-    // TextEditingController は使われなくなったら必ず dispose する必要があります。
-    controller.dispose();
-    super.dispose();
+  Widget build(BuildContext context) {
+    return Container(
+      color: Color.fromARGB(255, 34, 52, 60),
+      child: Padding(
+        padding: const EdgeInsets.only(top: 50, left: 35, right: 35, bottom: 0),
+        child: Column(children: [
+          RedRoomBox(),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Column(
+                children: [GreenRoomBox(), Red2RoomBox()],
+              ),
+              Column(
+                children: [YellowRoomBox(), AddRoomBox()],
+              )
+            ],
+          )
+        ]),
+      ),
+    );
   }
+}
+
+class AddRoomBox extends StatelessWidget {
+  const AddRoomBox({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final currentRoomName = ref.watch(currentRoomNameProvider).value;
-    final roomId = ref.watch(roomIdProvider).id;
-    return GestureDetector(
-      onTap: () {
-        primaryFocus?.unfocus();
-      },
-
-      child: Scaffold(
-        // appBar: AppBar(
-        //   title: Text(currentRoomName ?? '',
-        //       style: TextStyle(color: Colors.black)),
-        //   backgroundColor: Colors.white,
-        //   elevation: 1,
-        //   leading: SizedBox(
-        //     width: 30,
-        //   ),
-        //   // IconButton(
-        //   //   onPressed: () {
-        //   //     return context.go('/Chat/Rooms');
-        //   //   },
-        //   //   icon: Icon(
-        //   //     Icons.chevron_left,
-        //   //     color: Colors.black,
-        //   //     size: 24,
-        //   //   ),
-        //   // ),
-        //   /*
-        //   // actions プロパティにWidgetを与えると右端に表示されます。
-        //   actions: [
-        //     // tap 可能にするために InkWell を使います。
-
-        //     InkWell(
-        //       onTap: () {
-        //         Navigator.of(context).push(
-        //           MaterialPageRoute(
-        //             builder: (context) {
-        //               return const ProfilePage();
-        //             },
-        //           ),
-        //         );
-        //       },
-
-        //       child: const Icon(
-        //         Icons.more_vert,
-        //         color: Colors.black,
-        //         size: 24,
-        //       ),
-
-        //     ),
-        //     const SizedBox(
-        //       width: 40,
-        //     )
-        //   ],*/
-        // ),
-
-        /*
-          ListView(
-          children: [
-            DrawerHeader(
-              decoration: BoxDecoration(color: Colors.lightBlue),
-              child: Text('Test App'),
-            ),
-            ListTile(
-              title: Text('item1'),
-              onTap: () {},
-            ),
-            ListTile(
-              title: Text('item2'),
-              onTap: () {},
-            )
-          ]
-        )
-        */
-
-        body: Container(
-          color: Color.fromARGB(255, 3, 23, 77),
-          child: Stack(children: [
-            Positioned(
-              child: Image.asset('images/chat/chatHeader.png'),
-            ),
-            Column(children: [
-              //UnityWidget(onUnityCreated: onUnityCreated),
-              Padding(
-                padding: const EdgeInsets.only(
-                    top: 40, left: 40, right: 40, bottom: 20),
-                child: Text(
-                  '日常会話の部屋',
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.nunito(
-                      fontWeight: FontWeight.w500,
-                      color: Color.fromARGB(255, 228, 228, 228),
-                      fontSize: 24),
+    return Padding(
+      padding: const EdgeInsets.only(top: 10),
+      child: DottedBorder(
+        color: Color.fromARGB(255, 40, 96, 83),
+        dashPattern: [7, 10],
+        strokeWidth: 2,
+        borderType: BorderType.RRect,
+        radius: const Radius.circular(30),
+        child: Container(
+          width: 160,
+          height: 160,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                width: 60,
+                height: 60,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Color.fromARGB(255, 40, 96, 83),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(
-                    top: 0, left: 80, right: 80, bottom: 20),
-                child: Text(
-                  'ここは日常会話の部屋です。LINEの代わりとしてご活用ください。',
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.nunito(
-                      fontWeight: FontWeight.w500,
-                      color: Color.fromARGB(255, 228, 228, 228),
-                      fontSize: 14),
-                ),
-              ),
-              Expanded(
-                child: ref.watch(postsProvider(roomId)).when(
-                  data: (data) {
-                    /// 値が取得できた場合に呼ばれる。
-                    return ListView.builder(
-                      padding: EdgeInsets.only(top: 10, left: 10),
-                      itemCount: data.docs.length,
-                      itemBuilder: (context, index) {
-                        final post = data.docs[index].data();
-                        return PostWidget(post: post);
-                      },
-                    );
-                  },
-                  error: (_, __) {
-                    /// 読み込み中にErrorが発生した場合に呼ばれる。
-                    return const Center(
-                      child: Text('不具合が発生しました。'),
-                    );
-                  },
-                  loading: () {
-                    /// 読み込み中の場合に呼ばれる。
-                    return const Center(
-                      child: CircularProgressIndicator(),
-                    );
-                  },
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 8.0),
-                child: TextFormField(
-                  controller: controller,
-                  decoration: InputDecoration(
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(8),
-                      borderSide: const BorderSide(
-                        color: Color.fromARGB(47, 165, 165, 165),
-                        width: 1,
-                      ),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(8),
-                      borderSide: const BorderSide(
-                        color: Color.fromARGB(110, 206, 206, 206),
-                        width: 1,
-                      ),
-                    ),
+                alignment: Alignment.center,
+                child: Container(
+                  width: 45,
+                  height: 45,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color.fromARGB(255, 62, 213, 152),
                   ),
-                  onFieldSubmitted: (text) {
-                    sendPost(text);
-                    // 入力中の文字列を削除します。
-                    controller.clear();
-                  },
+                  alignment: Alignment.center,
+                  child: Icon(
+                    Icons.add,
+                    color: Color.fromARGB(255, 212, 212, 212),
+                  ),
                 ),
               ),
-            ]),
-          ]),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                'Add new item',
+                style: GoogleFonts.nunito(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w800,
+                  color: Color.fromARGB(255, 53, 181, 130),
+                ),
+              )
+            ],
+          ),
         ),
       ),
-      // */
     );
-  }
-
-  void onUnityCreated(controller) {
-    _unityWidgetController = controller;
   }
 }
