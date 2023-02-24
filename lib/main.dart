@@ -109,6 +109,12 @@ class MyApp extends StatelessWidget {
             pageBuilder: (context, state) {
               return NoTransitionPage(child: MyRoomPage());
             },
+          ),
+          GoRoute(
+            path: '/Setting',
+            pageBuilder: (context, state) {
+              return NoTransitionPage(child: MyRoomPage());
+            },
           )
         ],
       ),
