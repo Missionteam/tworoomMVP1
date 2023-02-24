@@ -43,16 +43,18 @@ class PostWidget extends ConsumerWidget {
                       'まさと',
                       // post.posterName,
                       style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        height: 1.5,
-                      ),
+                          fontWeight: FontWeight.bold,
+                          height: 1.5,
+                          color: Color.fromARGB(199, 213, 212, 212)),
                     ),
                     const SizedBox(
                       width: 5,
                     ),
                     Text(
                       DateFormat('MM/dd HH:mm').format(post.createdAt.toDate()),
-                      style: const TextStyle(fontSize: 8),
+                      style: const TextStyle(
+                          fontSize: 8,
+                          color: Color.fromARGB(127, 126, 126, 126)),
                     )
                   ],
                 ),
@@ -207,7 +209,7 @@ class PostWidget extends ConsumerWidget {
                         post.text,
                         style: const TextStyle(
                           fontSize: 14,
-                          color: Colors.black,
+                          color: Color.fromARGB(227, 200, 200, 200),
                           height: 1,
                         ),
                       ),
@@ -222,14 +224,14 @@ class PostWidget extends ConsumerWidget {
                   ],
                 ),
                 SizedBox(
-                  height: (post.stamps == '') ? 1 : 30,
+                  height: (post.stamps == '') ? 0 : 30,
                   child: ElevatedButton(
                     onPressed: (() => null),
                     child: Text(post.stamps ?? ''),
                     style: ElevatedButton.styleFrom(
                       shape: const StadiumBorder(),
-                      backgroundColor: Color.fromARGB(195, 243, 243, 243),
-                      shadowColor: Color.fromARGB(255, 255, 255, 255),
+                      backgroundColor: Color.fromARGB(61, 94, 94, 94),
+                      shadowColor: Color.fromARGB(255, 194, 194, 194),
                       elevation: 0,
                       padding: EdgeInsets.all(0),
                       // maximumSize: Size(0.1, 0.1)
