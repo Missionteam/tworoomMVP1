@@ -5,7 +5,8 @@ import 'package:flutter_unity_widget_example/models/auth_model.dart';
 import 'package:flutter_unity_widget_example/models/room_id_model.dart';
 import 'package:flutter_unity_widget_example/pages/auth/error_screen.dart';
 import 'package:flutter_unity_widget_example/pages/auth/loading_screen.dart';
-import 'package:flutter_unity_widget_example/pages/main_page.dart';
+import 'package:flutter_unity_widget_example/pages/home_page.dart';
+
 import 'package:flutter_unity_widget_example/providers/rooms_provider.dart';
 import 'package:flutter_unity_widget_example/providers/talkroom_provider.dart';
 
@@ -62,7 +63,7 @@ class _SignInPageState extends ConsumerState<SignInPage> {
                       error: (e, trace) => ErrorScreen(e, trace),
                       loading: () => const LoadingScreen());
 
-                  return const MainPage();
+                  return const HomePage();
                 }),
                 (route) => false,
               );

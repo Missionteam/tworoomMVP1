@@ -1,6 +1,6 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 import '../providers/auth_provider.dart';
@@ -16,62 +16,129 @@ class ProfilePage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     //final user = ref.read(userProvider).value!;
-    final user = FirebaseAuth.instance.currentUser!;
+    final user = ref.watch(authStateProvider);
     return Scaffold(
-      //key: _scaffoldKey,
-      appBar: AppBar(title: const Text('マイページ')),
-      body: Container(
-        alignment: Alignment.center,
-        padding: const EdgeInsets.all(32),
+      appBar: AppBar(
+        backgroundColor: Color.fromARGB(0, 250, 250, 250),
+        toolbarHeight: 100,
+        centerTitle: true,
+        title: Text(
+          '個人設定',
+          style: GoogleFonts.nunito(
+            fontSize: 22,
+            fontWeight: FontWeight.w500,
+            color: Color.fromARGB(255, 90, 90, 90),
+          ),
+        ),
+        elevation: 0,
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(12.0),
         child: Column(
           children: [
-            // ユーザーアイコン画像
-            CircleAvatar(
-              backgroundImage: NetworkImage(user.photoURL!),
-              radius: 40,
+            SizedBox(
+              height: 50,
             ),
-            // ユーザー名
-            Text(
-              user.displayName!,
-              style: const TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
-              ),
-            ),
-            const SizedBox(height: 16),
-
-            // 部分的に左寄せにしたい場合の書き方
-            Align(
-              alignment: Alignment.centerLeft,
-              // ユーザー ID
-              child: Text('ユーザーID：${user.uid}'),
-            ),
-            Align(
-              alignment: Alignment.centerLeft,
-              // 登録日
-              child: Text('登録日：${user.metadata.creationTime!}'),
-            ),
-            const SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: () async {
-                final navigator = Navigator.of(context);
-                // Google からサインアウト
-                await GoogleSignIn().signOut();
-                // Firebase からサインアウト
-                await ref.read(fireBaseAuthProvider).signOut();
-
-                navigator.pop();
+            MenuWidget(
+                icon: Icons.lock_person_outlined,
+                text: 'プライバシー',
+                onpressed: () {}),
+            MenuWidget(
+                icon: Icons.notifications_outlined,
+                text: '通知',
+                onpressed: () {}),
+            MenuWidget(
+                icon: Icons.chat_bubble_outline,
+                text: 'ヘルプ＆フィードバック',
+                onpressed: () {}),
+            MenuWidget(
+                icon: Icons.font_download_outlined,
+                text: '言語',
+                onpressed: () {}),
+            MenuWidget(
+                icon: Icons.info_outline, text: 'ふたりべやについて', onpressed: () {}),
+            MenuWidget(
+                icon: Icons.file_download_outlined,
+                text: 'キャッシュデータ',
+                onpressed: () {}),
+            MenuWidget(
+              icon: Icons.power_settings_new,
+              text: 'ログアウト',
+              onpressed: () {
+                () async {
+                  // Google からサインアウト
+                  await GoogleSignIn().signOut();
+                  // Firebase からサインアウト
+                  await ref.read(fireBaseAuthProvider).signOut();
+                };
               },
-              child: const Text('サインアウト'),
             ),
-            //UnityWidget(onUnityCreated: onUnityCreated)
           ],
         ),
       ),
+
+      //UnityWidget(onUnityCreated: onUnityCreated)
     );
   }
   /*void onUnityCreated(controller) {
     _unityWidgetController = controller;
   }
   */
+}
+
+class MenuWidget extends StatefulWidget {
+  MenuWidget({
+    Key? key,
+    required this.text,
+    required this.icon,
+    required this.onpressed,
+  }) : super(key: key);
+  String text;
+  IconData icon;
+  void Function() onpressed;
+  @override
+  State<MenuWidget> createState() => _MenuWidgetState();
+}
+
+class _MenuWidgetState extends State<MenuWidget> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialButton(
+      onPressed: widget.onpressed,
+      child: Padding(
+        padding: const EdgeInsets.only(top: 12, bottom: 12),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Icon(
+                  widget.icon,
+                  color: Colors.black,
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  widget.text,
+                  style: GoogleFonts.nunito(
+                    fontSize: 22,
+                    fontWeight: FontWeight.w500,
+                    color: Color.fromARGB(255, 90, 90, 90),
+                  ),
+                ),
+              ],
+            ),
+            Icon(
+              Icons.navigate_next,
+              color: Colors.black,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }

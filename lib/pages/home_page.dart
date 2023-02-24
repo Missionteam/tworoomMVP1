@@ -32,73 +32,84 @@ class _HomePageState extends ConsumerState<HomePage> {
       key: _scaffoldKey,
       body: SafeArea(
         bottom: false,
-        child: Stack(children: <Widget>[
-          UnityWidget(
-            onUnityCreated: onUnityCreated,
-            fullscreen: false,
-          ),
-          Positioned(
-              right: 50,
-              top: 30,
-              child: CustomPaint(
-                size: Size(40, 40),
-                painter: DrawTriangle(ref),
-              )),
-          Positioned(
-              left: 120,
-              top: 80,
-              width: 200,
-              child: Image.asset('images/whatNowStamp/WaitReply.png')),
-          Positioned(
-              left: 90,
-              top: 245,
-              width: 250,
-              child: Image.asset('images/whatNowStamp/WaitGirl.png')),
-          Positioned(
-            left: 85,
-            top: 510,
-            width: 250,
-            child: GestureDetector(
-              child: Image.asset('images/SorryForLate.png'),
-              onTap: () {
-                showDialog(
-                    context: context,
-                    builder: (_) {
-                      return SorryGirdDialog();
-                      // return EngageDialog();
-                    });
-              },
+        child: Container(
+          color: Color.fromARGB(255, 255, 239, 225),
+          child: Stack(children: <Widget>[
+            UnityWidget(
+              onUnityCreated: onUnityCreated,
+              fullscreen: false,
             ),
-          ),
-          Positioned(
-            left: 0,
-            top: 0,
-            width: 250,
-            child: InkWell(
-              // elevation: 8.0,
-              child: Container(
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage('images/GiveStamp.png'),
-                    fit: BoxFit.cover,
+            Positioned(
+                right: 50,
+                top: 30,
+                child: CustomPaint(
+                  size: Size(40, 40),
+                  painter: DrawTriangle(ref),
+                )),
+            Positioned(
+                left: 120,
+                top: 80,
+                width: 200,
+                child: Image.asset('images/whatNowStamp/WaitReply.png')),
+            Positioned(
+              left: 85,
+              top: 510,
+              width: 250,
+              child: GestureDetector(
+                child: Image.asset('images/SorryForLate.png'),
+                onTap: () {
+                  showDialog(
+                      context: context,
+                      builder: (_) {
+                        return SorryGirdDialog();
+                        // return EngageDialog();
+                      });
+                },
+              ),
+            ),
+            Positioned(
+              left: 0,
+              top: 0,
+              width: 250,
+              child: InkWell(
+                // elevation: 8.0,
+                child: Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage('images/GiveStamp.png'),
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
+                onTap: () {},
+                // onPressed: () {}
               ),
-              onTap: () {},
-              // onPressed: () {}
             ),
-          ),
-          Positioned(
-              width: 70,
-              height: 70,
-              left: 50,
-              top: 220,
-              child: ref.watch(EngageStampProvider)
+            Positioned(
+                child: ElevatedButton(
+              onPressed: () => setActive('WaitGirl'),
+              child: Text('Girl'),
+            )),
+            Positioned(
+                width: 70,
+                height: 70,
+                left: 50,
+                top: 220,
+                child: ref.watch(EngageStampProvider)
 
-              // ),
-              )
-        ]),
+                // ),
+                )
+          ]),
+        ),
       ),
+    );
+  }
+
+  void setActive(String object) {
+    _unityWidgetController.postMessage(
+      'ActiveChanger',
+      '${object}Acitive',
+      object,
     );
   }
 

@@ -69,8 +69,8 @@ class _ChatPageState extends ConsumerState<ChatPage> {
 
   @override
   Widget build(BuildContext context) {
-    final currentRoomName = ref.watch(currentRoomNameProvider).value ?? '';
-    final roomId = ref.watch(roomIdProvider).id;
+    final currentRoomName = '日常会話の部屋';
+    final roomId = 'init';
     return GestureDetector(
       onTap: () {
         primaryFocus?.unfocus();

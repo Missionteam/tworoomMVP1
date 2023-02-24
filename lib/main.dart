@@ -4,7 +4,9 @@ import 'package:flutter_unity_widget_example/pages/auth/auth_checker.dart';
 import 'package:flutter_unity_widget_example/pages/chat_page.dart';
 import 'package:flutter_unity_widget_example/pages/chat_room_page.dart';
 import 'package:flutter_unity_widget_example/pages/home_page.dart';
-import 'package:flutter_unity_widget_example/pages/my_room_page.dart';
+import 'package:flutter_unity_widget_example/pages/my_page.dart';
+
+import 'package:flutter_unity_widget_example/pages/myroom_page.dart';
 import 'package:flutter_unity_widget_example/pages/room_grid_page.dart';
 import 'package:flutter_unity_widget_example/pages/room_page2.dart';
 import 'package:flutter_unity_widget_example/screens/no_interaction_screen.dart';
@@ -121,7 +123,7 @@ class MyApp extends StatelessWidget {
           GoRoute(
             path: '/Setting',
             pageBuilder: (context, state) {
-              return NoTransitionPage(child: MyRoomPage());
+              return NoTransitionPage(child: ProfilePage());
             },
           )
         ],
