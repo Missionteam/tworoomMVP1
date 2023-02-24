@@ -42,3 +42,9 @@ final currentRoomNameProvider = FutureProvider<String?>((ref) async {
   final currentroomName = await currentRoom?.get('roomname');
   return currentroomName;
 });
+
+final currentRoomDescriptionProvider = FutureProvider<String?>((ref) async {
+  final currentRoom = ref.watch(currentRoomProvider).value;
+  final currentroomDescription = await currentRoom?.get('description');
+  return currentroomDescription;
+});

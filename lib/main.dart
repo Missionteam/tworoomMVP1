@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_unity_widget_example/pages/auth/auth_checker.dart';
 import 'package:flutter_unity_widget_example/pages/chat_page.dart';
+import 'package:flutter_unity_widget_example/pages/chat_room_page.dart';
 import 'package:flutter_unity_widget_example/pages/home_page.dart';
 import 'package:flutter_unity_widget_example/pages/my_room_page.dart';
 import 'package:flutter_unity_widget_example/pages/room_grid_page.dart';
@@ -100,7 +101,13 @@ class MyApp extends StatelessWidget {
               GoRoute(
                 path: 'Chat',
                 builder: (BuildContext context, GoRouterState state) {
-                  return ChatPage();
+                  return ChatRoomPage();
+                },
+              ),
+              GoRoute(
+                path: 'AddRoom',
+                builder: (BuildContext context, GoRouterState state) {
+                  return RoomPage();
                 },
               ),
             ],

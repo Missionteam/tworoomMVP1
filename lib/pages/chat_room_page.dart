@@ -16,14 +16,14 @@ import '../providers/posts_provider.dart';
 import '../widgets/fundomental/post_widget.dart';
 import './my_page.dart';
 
-class ChatPage extends ConsumerStatefulWidget {
-  ChatPage({super.key});
+class ChatRoomPage extends ConsumerStatefulWidget {
+  ChatRoomPage({super.key});
 
   @override
-  ConsumerState<ConsumerStatefulWidget> createState() => _ChatPageState();
+  ConsumerState<ConsumerStatefulWidget> createState() => _ChatRoomPageState();
 }
 
-class _ChatPageState extends ConsumerState<ChatPage> {
+class _ChatRoomPageState extends ConsumerState<ChatRoomPage> {
   //get onUnityCreated => null;
   late UnityWidgetController _unityWidgetController;
 
@@ -33,7 +33,7 @@ class _ChatPageState extends ConsumerState<ChatPage> {
     final posterId = user.uid; // ログイン中のユーザーのIDがとれます
     final posterName = user.displayName!; // Googleアカウントの名前がとれます
     final posterImageUrl = user.photoURL!; // Googleアカウントのアイコンデータがとれます
-    final roomId = 'init';
+    final roomId = ref.watch(roomIdProvider).id;
 
     // 先ほど作った postsReference からランダムなIDのドキュメントリファレンスを作成します
     // doc の引数を空にするとランダムなIDが採番されます
@@ -71,6 +71,8 @@ class _ChatPageState extends ConsumerState<ChatPage> {
   Widget build(BuildContext context) {
     final currentRoomName = ref.watch(currentRoomNameProvider).value ?? '';
     final roomId = ref.watch(roomIdProvider).id;
+    final currentRoomDescription =
+        ref.watch(currentRoomDescriptionProvider).value ?? '';
     return GestureDetector(
       onTap: () {
         primaryFocus?.unfocus();
@@ -149,6 +151,16 @@ class _ChatPageState extends ConsumerState<ChatPage> {
             Positioned(
               child: Image.asset('images/chat/chatHeader.png'),
             ),
+            Positioned(
+                left: 8,
+                top: 34,
+                child: IconButton(
+                    onPressed: () => GoRouter.of(context).pop(),
+                    icon: Icon(
+                      Icons.chevron_left_outlined,
+                      color: Colors.white,
+                      size: 24,
+                    ))),
             Column(children: [
               //UnityWidget(onUnityCreated: onUnityCreated),
               Padding(
@@ -167,7 +179,7 @@ class _ChatPageState extends ConsumerState<ChatPage> {
                 padding: const EdgeInsets.only(
                     top: 0, left: 80, right: 80, bottom: 20),
                 child: Text(
-                  'ここは日常会話の部屋です。LINEの代わりとしてご活用ください。',
+                  currentRoomDescription,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.nunito(
                       fontWeight: FontWeight.w500,

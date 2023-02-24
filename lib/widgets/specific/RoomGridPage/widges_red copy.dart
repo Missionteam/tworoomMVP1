@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_unity_widget_example/models/room_id_model.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class RedRoomBox extends StatelessWidget {
-  const RedRoomBox({
-    Key? key,
-  }) : super(key: key);
+class RedRoomBox extends ConsumerWidget {
+  const RedRoomBox({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Container(
       width: 340,
       height: 200,
@@ -69,6 +70,17 @@ class RedRoomBox extends StatelessWidget {
               top: 90,
               width: 180,
               child: Image.asset('images/roomgrid/RedBoxImage.png')),
+          Positioned(
+              width: 340,
+              height: 200,
+              child: MaterialButton(
+                onPressed: () {
+                  ref
+                      .watch(roomIdProvider.notifier)
+                      .setRoomId('BWFcU9owLQbdSStahSw4');
+                  GoRouter.of(context).push('/RoomGrid/Chat');
+                },
+              ))
         ],
       ),
     );

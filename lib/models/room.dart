@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/material.dart';
 
 class Room {
   Room({
@@ -7,8 +6,9 @@ class Room {
     required this.roomId,
     required this.reference,
     this.roomIndex = 0,
-    this.color = Colors.white,
+    this.color = 0,
     this.image = '',
+    this.description = '',
   });
 
   Room copyWith({
@@ -16,8 +16,9 @@ class Room {
     String? roomId,
     DocumentReference? reference,
     int? roomIndex,
-    Color? color,
+    int? color,
     String? image,
+    String? description,
   }) {
     return Room(
       roomId: roomId ?? this.roomId,
@@ -26,6 +27,7 @@ class Room {
       roomIndex: roomIndex ?? this.roomIndex,
       color: color ?? this.color,
       image: image ?? this.image,
+      description: description ?? this.description,
     );
   }
 
@@ -37,6 +39,7 @@ class Room {
       roomIndex: map['roomIndex'],
       color: map['color'],
       image: map['image'],
+      description: map['description'],
       reference:
           snapshot.reference, // 注意。reference は map ではなく snapshot に入っています。
     );
@@ -47,7 +50,8 @@ class Room {
       'roomId': roomId,
       'roomIndex': roomIndex,
       'color': color,
-      'image': image
+      'image': image,
+      'description': description,
       // 'reference': reference, reference は field に含めなくてよい
       // field に含めなくても DocumentSnapshot に reference が存在するため
     };
@@ -60,6 +64,7 @@ class Room {
   final DocumentReference reference;
 
   final int roomIndex;
-  final Color color;
+  final int color;
   final String image;
+  final String description;
 }
