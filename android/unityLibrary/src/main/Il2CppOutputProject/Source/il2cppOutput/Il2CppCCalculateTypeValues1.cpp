@@ -27972,6 +27972,24 @@ struct SetActive_tB87BB5B726EB18026D8486B4984B86DD02A87FA8  : public MonoBehavio
 {
 	// UnityEngine.GameObject SetActive::WaitGirl
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___WaitGirl_4;
+	// UnityEngine.GameObject SetActive::WalkGirl
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___WalkGirl_5;
+	// UnityEngine.GameObject SetActive::WorkGirl
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___WorkGirl_6;
+	// UnityEngine.GameObject SetActive::SleepGirl
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___SleepGirl_7;
+	// UnityEngine.GameObject SetActive::BreakGirl
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___BreakGirl_8;
+	// UnityEngine.GameObject SetActive::WaitBoy
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___WaitBoy_9;
+	// UnityEngine.GameObject SetActive::WalkBoy
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___WalkBoy_10;
+	// UnityEngine.GameObject SetActive::WorkBoy
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___WorkBoy_11;
+	// UnityEngine.GameObject SetActive::SleepBoy
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___SleepBoy_12;
+	// UnityEngine.GameObject SetActive::BreakBoy
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___BreakBoy_13;
 };
 
 // Unity.VisualScripting.SetApplicationVariable

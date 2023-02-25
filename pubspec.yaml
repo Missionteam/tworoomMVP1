@@ -46,6 +46,7 @@ flutter:
     - images/
     - images/home/
     - images/whatNowStamp/
+    - images/whatNowStamp/WorkTime/
     - images/chat/
     - images/roomgrid/
   #   - images/a_dot_ham.jpeg

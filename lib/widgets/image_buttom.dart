@@ -14,17 +14,20 @@ class ImageButton extends ConsumerWidget {
   final void Function()? onPressd;
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return MaterialButton(
-      elevation: 8.0,
-      child: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('images/${imageName}'),
-            fit: BoxFit.cover,
+    return Stack(
+      children: [
+        Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('images/${imageName}'),
+              fit: BoxFit.cover,
+            ),
           ),
         ),
-      ),
-      onPressed: onPressd,
+        Container(
+            constraints: BoxConstraints.expand(),
+            child: MaterialButton(onPressed: onPressd)),
+      ],
     );
   }
 }

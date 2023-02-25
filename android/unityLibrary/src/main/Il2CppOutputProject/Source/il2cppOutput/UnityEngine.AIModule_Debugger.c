@@ -38,14 +38,14 @@ static const Il2CppMethodExecutionContextInfoIndex g_methodExecutionContextInfoI
 IL2CPP_EXTERN_C Il2CppSequencePoint g_sequencePointsUnityEngine_AIModule[];
 Il2CppSequencePoint g_sequencePointsUnityEngine_AIModule[8] = 
 {
-	{ 61002, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 0 } /* seqPointIndex: 0 */,
-	{ 61002, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 1 } /* seqPointIndex: 1 */,
-	{ 61002, 1, 191, 191, 9, 10, 0, kSequencePointKind_Normal, 0, 2 } /* seqPointIndex: 2 */,
-	{ 61002, 1, 192, 192, 13, 37, 1, kSequencePointKind_Normal, 0, 3 } /* seqPointIndex: 3 */,
-	{ 61002, 1, 192, 192, 0, 0, 10, kSequencePointKind_Normal, 0, 4 } /* seqPointIndex: 4 */,
-	{ 61002, 1, 193, 193, 17, 31, 13, kSequencePointKind_Normal, 0, 5 } /* seqPointIndex: 5 */,
-	{ 61002, 1, 193, 193, 17, 31, 18, kSequencePointKind_StepOut, 0, 6 } /* seqPointIndex: 6 */,
-	{ 61002, 1, 194, 194, 9, 10, 24, kSequencePointKind_Normal, 0, 7 } /* seqPointIndex: 7 */,
+	{ 61020, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 0 } /* seqPointIndex: 0 */,
+	{ 61020, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 1 } /* seqPointIndex: 1 */,
+	{ 61020, 1, 191, 191, 9, 10, 0, kSequencePointKind_Normal, 0, 2 } /* seqPointIndex: 2 */,
+	{ 61020, 1, 192, 192, 13, 37, 1, kSequencePointKind_Normal, 0, 3 } /* seqPointIndex: 3 */,
+	{ 61020, 1, 192, 192, 0, 0, 10, kSequencePointKind_Normal, 0, 4 } /* seqPointIndex: 4 */,
+	{ 61020, 1, 193, 193, 17, 31, 13, kSequencePointKind_Normal, 0, 5 } /* seqPointIndex: 5 */,
+	{ 61020, 1, 193, 193, 17, 31, 18, kSequencePointKind_StepOut, 0, 6 } /* seqPointIndex: 6 */,
+	{ 61020, 1, 194, 194, 9, 10, 24, kSequencePointKind_Normal, 0, 7 } /* seqPointIndex: 7 */,
 };
 #else
 extern Il2CppSequencePoint g_sequencePointsUnityEngine_AIModule[];

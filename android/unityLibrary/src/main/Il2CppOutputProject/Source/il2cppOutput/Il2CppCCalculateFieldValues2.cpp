@@ -16225,6 +16225,24 @@ struct SetActive_tB87BB5B726EB18026D8486B4984B86DD02A87FA8  : public MonoBehavio
 {
 	// UnityEngine.GameObject SetActive::WaitGirl
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___WaitGirl_4;
+	// UnityEngine.GameObject SetActive::WalkGirl
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___WalkGirl_5;
+	// UnityEngine.GameObject SetActive::WorkGirl
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___WorkGirl_6;
+	// UnityEngine.GameObject SetActive::SleepGirl
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___SleepGirl_7;
+	// UnityEngine.GameObject SetActive::BreakGirl
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___BreakGirl_8;
+	// UnityEngine.GameObject SetActive::WaitBoy
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___WaitBoy_9;
+	// UnityEngine.GameObject SetActive::WalkBoy
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___WalkBoy_10;
+	// UnityEngine.GameObject SetActive::WorkBoy
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___WorkBoy_11;
+	// UnityEngine.GameObject SetActive::SleepBoy
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___SleepBoy_12;
+	// UnityEngine.GameObject SetActive::BreakBoy
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___BreakBoy_13;
 };
 
 // Unity.VisualScripting.SetObjectVariable
@@ -26213,9 +26231,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7497[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7499[1] = 
 {
 	static_cast<int32_t>(offsetof(Rotate_t3280DFA30ADF04B60D2B142844F3B2364A472EAE, ___RotateAmount_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7501[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7501[10] = 
 {
-	static_cast<int32_t>(offsetof(SetActive_tB87BB5B726EB18026D8486B4984B86DD02A87FA8, ___WaitGirl_4)),};
+	static_cast<int32_t>(offsetof(SetActive_tB87BB5B726EB18026D8486B4984B86DD02A87FA8, ___WaitGirl_4)),static_cast<int32_t>(offsetof(SetActive_tB87BB5B726EB18026D8486B4984B86DD02A87FA8, ___WalkGirl_5)),static_cast<int32_t>(offsetof(SetActive_tB87BB5B726EB18026D8486B4984B86DD02A87FA8, ___WorkGirl_6)),static_cast<int32_t>(offsetof(SetActive_tB87BB5B726EB18026D8486B4984B86DD02A87FA8, ___SleepGirl_7)),static_cast<int32_t>(offsetof(SetActive_tB87BB5B726EB18026D8486B4984B86DD02A87FA8, ___BreakGirl_8)),static_cast<int32_t>(offsetof(SetActive_tB87BB5B726EB18026D8486B4984B86DD02A87FA8, ___WaitBoy_9)),static_cast<int32_t>(offsetof(SetActive_tB87BB5B726EB18026D8486B4984B86DD02A87FA8, ___WalkBoy_10)),static_cast<int32_t>(offsetof(SetActive_tB87BB5B726EB18026D8486B4984B86DD02A87FA8, ___WorkBoy_11)),static_cast<int32_t>(offsetof(SetActive_tB87BB5B726EB18026D8486B4984B86DD02A87FA8, ___SleepBoy_12)),static_cast<int32_t>(offsetof(SetActive_tB87BB5B726EB18026D8486B4984B86DD02A87FA8, ___BreakBoy_13)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7504[1] = 
 {
 	0,};
