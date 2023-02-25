@@ -17,6 +17,9 @@ workflows:
             - name: Clean
               script: |
                 flutter pub cache repair
+            - name: where am I
+              script: |
+                pwd    
             - name: list up
               script: |
                 ls                       
