@@ -4,7 +4,7 @@ import 'package:flutter_unity_widget_example/models/post.dart';
 import 'package:flutter_unity_widget_example/providers/firestore_provider.dart';
 import 'package:flutter_unity_widget_example/providers/talkroom_provider.dart';
 
-import '../allConstants/all_Constants.dart';
+import 'package:flutter_unity_widget_example/allConstants/all_Constants.dart';
 
 ///postReferenceProviderが提供する
 ///ReferenceにあるPostを取得するプロバイダー

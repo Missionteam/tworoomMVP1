@@ -7,8 +7,8 @@ import 'package:flutter_unity_widget_example/pages/home_page.dart';
 import 'package:flutter_unity_widget_example/providers/auth_provider.dart';
 import 'package:flutter_unity_widget_example/providers/rooms_provider.dart';
 
-import '../allConstants/all_constants.dart';
-import '../pages/auth/sign_in_page.dart';
+import 'package:flutter_unity_widget_example/allConstants/all_constants.dart';
+import 'package:flutter_unity_widget_example/pages/auth/sign_in_page.dart';
 
 class SplashPage extends ConsumerStatefulWidget {
   const SplashPage({Key? key}) : super(key: key);

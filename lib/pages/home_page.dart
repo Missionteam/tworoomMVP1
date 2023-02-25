@@ -8,7 +8,7 @@ import 'package:flutter_unity_widget_example/widgets/specific/triangle_painter.d
 import 'package:flutter_unity_widget_example/widgets/specific/whatNow/what_now_dialog.dart';
 import 'package:go_router/go_router.dart';
 
-import '../widgets/specific/sorryButton/sorry_dialog.dart';
+import 'package:flutter_unity_widget_example/widgets/specific/sorryButton/sorry_dialog.dart';
 
 class HomePage extends ConsumerStatefulWidget {
   const HomePage({super.key});

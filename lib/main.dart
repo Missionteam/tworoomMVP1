@@ -15,11 +15,11 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_unity_widget_example/widgets/fundomental/BtmNavigation.dart';
 import 'package:go_router/go_router.dart';
 
-import 'firebase_options.dart';
-import 'menu_screen.dart';
-import 'screens/api_screen.dart';
-import 'screens/loader_screen.dart';
-import 'screens/simple_screen.dart';
+import 'package:flutter_unity_widget_example/firebase_options.dart';
+import 'package:flutter_unity_widget_example/menu_screen.dart';
+import 'package:flutter_unity_widget_example/screens/api_screen.dart';
+import 'package:flutter_unity_widget_example/screens/loader_screen.dart';
+import 'package:flutter_unity_widget_example/screens/simple_screen.dart';
 
 //      home: const SignInPage(),
 final GlobalKey<NavigatorState> _rootNavigatorKey =

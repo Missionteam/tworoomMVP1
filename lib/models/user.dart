@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_unity_widget_example/models/whatNow.dart';
-import '../allConstants/firestore_constants.dart';
+import 'package:flutter_unity_widget_example/allConstants/firestore_constants.dart';
 
 class AppUser extends Equatable {
   final String id;

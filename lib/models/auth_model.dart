@@ -5,9 +5,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_unity_widget_example/models/post.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../allConstants/all_constants.dart';
+import 'package:flutter_unity_widget_example/allConstants/all_constants.dart';
 
-import 'user.dart';
+import 'package:flutter_unity_widget_example/models/user.dart';
 
 final authenticationProvider = Provider((ref) {
   return Authentication(ref);

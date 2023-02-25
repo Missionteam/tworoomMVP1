@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_unity_widget_example/providers/users_provider.dart';
 
-import 'specific/engageButton/stamp_view_dialog.dart';
+import 'package:flutter_unity_widget_example/widgets/specific/engageButton/stamp_view_dialog.dart';
 
 class ImageButton extends ConsumerWidget {
   ImageButton({

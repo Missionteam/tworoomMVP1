@@ -4,8 +4,8 @@ import 'package:flutter_unity_widget_example/pages/reply_page.dart';
 import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
 
-import '../../models/post.dart';
-import '../../models/room.dart';
+import 'package:flutter_unity_widget_example/models/post.dart';
+import 'package:flutter_unity_widget_example/models/room.dart';
 
 class PostWidget extends ConsumerWidget {
   const PostWidget({

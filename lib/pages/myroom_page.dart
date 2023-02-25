@@ -11,10 +11,10 @@ import 'package:flutter_unity_widget_example/providers/rooms_provider.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../models/post.dart';
-import '../providers/posts_provider.dart';
-import '../widgets/fundomental/post_widget.dart';
-import './my_page.dart';
+import 'package:flutter_unity_widget_example/models/post.dart';
+import 'package:flutter_unity_widget_example/providers/posts_provider.dart';
+import 'package:flutter_unity_widget_example/widgets/fundomental/post_widget.dart';
+import 'package:flutter_unity_widget_example/pages/my_page.dart';
 
 class MyRoomPage extends ConsumerStatefulWidget {
   MyRoomPage({super.key});

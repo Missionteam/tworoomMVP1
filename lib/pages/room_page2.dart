@@ -10,12 +10,12 @@ import 'package:flutter_unity_widget_example/pages/chat_page.dart';
 import 'package:flutter_unity_widget_example/providers/rooms_provider.dart';
 import 'package:go_router/go_router.dart';
 
-import '../models/post.dart';
-import '../models/room.dart';
-import '../providers/posts_provider.dart';
+import 'package:flutter_unity_widget_example/models/post.dart';
+import 'package:flutter_unity_widget_example/models/room.dart';
+import 'package:flutter_unity_widget_example/providers/posts_provider.dart';
 
-import '../widgets/fundomental/post_widget.dart';
-import './my_page.dart';
+import 'package:flutter_unity_widget_example/widgets/fundomental/post_widget.dart';
+import 'package:flutter_unity_widget_example/pages/my_page.dart';
 
 class RoomPage extends ConsumerStatefulWidget {
   const RoomPage({super.key});
