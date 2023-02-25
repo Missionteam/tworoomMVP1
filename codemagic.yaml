@@ -56,8 +56,6 @@ workflows:
       ios_signing:
         distribution_type: app_store
         bundle_identifier: com.missionyr.tworoom
-      vars:
-        APP_ID: XLPUJ3AR9R # <-- Put your APP ID here
       flutter: stable
       xcode: latest
       cocoapods: default
