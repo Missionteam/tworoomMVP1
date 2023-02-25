@@ -49,45 +49,52 @@ class HomePageState extends ConsumerState<HomePage> {
                   DefaultTabController(
                     initialIndex: 0,
                     length: 2,
-                    child: TabBarView(
-                      children: [
-                        SizedBox(
-                          height: 250,
-                          width: 250,
-                          child: Stack(
-                            alignment: Alignment.center,
-                            children: [
-                              UnityWidget(
-                                onUnityCreated: onUnityCreated,
-                                fullscreen: false,
+                    child: Container(
+                      height: 250,
+                      child: TabBarView(
+                        children: [
+                          Container(
+                            child: SizedBox(
+                              height: 250,
+                              width: 250,
+                              child: Stack(
+                                alignment: Alignment.center,
+                                children: [
+                                  UnityWidget(
+                                    onUnityCreated: onUnityCreated,
+                                    fullscreen: false,
+                                  ),
+                                  MaterialButton(
+                                    height: 200,
+                                    minWidth: 200,
+                                    onPressed: () => showWhatNow(context),
+                                  )
+                                ],
                               ),
-                              MaterialButton(
-                                height: 200,
-                                minWidth: 200,
-                                onPressed: () => showWhatNow(context),
-                              )
-                            ],
+                            ),
                           ),
-                        ),
-                        SizedBox(
-                          height: 250,
-                          width: 250,
-                          child: Stack(
-                            alignment: Alignment.center,
-                            children: [
-                              UnityWidget(
-                                onUnityCreated: onUnityCreated,
-                                fullscreen: false,
+                          Container(
+                            child: SizedBox(
+                              height: 250,
+                              width: 250,
+                              child: Stack(
+                                alignment: Alignment.center,
+                                children: [
+                                  UnityWidget(
+                                    onUnityCreated: onUnityCreated,
+                                    fullscreen: false,
+                                  ),
+                                  MaterialButton(
+                                    height: 200,
+                                    minWidth: 200,
+                                    onPressed: () => showWhatNow(context),
+                                  )
+                                ],
                               ),
-                              MaterialButton(
-                                height: 200,
-                                minWidth: 200,
-                                onPressed: () => showWhatNow(context),
-                              )
-                            ],
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                   MaterialButton(
