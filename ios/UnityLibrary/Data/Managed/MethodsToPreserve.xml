@@ -1,0 +1,7 @@
+<linker>
+	<assembly fullname="Unity.TextMeshPro" ignoreIfMissing="1">
+		<type fullname="TMPro.TMP_Text">
+			<method name="set_text"/>
+		</type>
+	</assembly>
+</linker>
