@@ -21,7 +21,7 @@ class HomePageState extends ConsumerState<HomePage> {
   static final GlobalKey<ScaffoldState> _scaffoldKey =
       GlobalKey<ScaffoldState>();
   late UnityWidgetController unityWidgetController;
-
+  bool isWoman = true;
   @override
   void dispose() {
     unityWidgetController.dispose();
@@ -46,53 +46,33 @@ class HomePageState extends ConsumerState<HomePage> {
                   SizedBox(
                     height: 50,
                   ),
-                  DefaultTabController(
-                    initialIndex: 0,
-                    length: 2,
-                    child: Container(
+                  Container(
+                    width: 300,
+                    child: SizedBox(
                       height: 250,
-                      child: TabBarView(
+                      width: 250,
+                      child: Stack(
+                        alignment: Alignment.center,
                         children: [
-                          Container(
-                            child: SizedBox(
-                              height: 250,
-                              width: 250,
-                              child: Stack(
-                                alignment: Alignment.center,
-                                children: [
-                                  UnityWidget(
-                                    onUnityCreated: onUnityCreated,
-                                    fullscreen: false,
-                                  ),
-                                  MaterialButton(
-                                    height: 200,
-                                    minWidth: 200,
-                                    onPressed: () => showWhatNow(context),
-                                  )
-                                ],
-                              ),
-                            ),
+                          UnityWidget(
+                            onUnityCreated: onUnityCreated,
+                            fullscreen: false,
                           ),
-                          Container(
-                            child: SizedBox(
-                              height: 250,
-                              width: 250,
-                              child: Stack(
-                                alignment: Alignment.center,
-                                children: [
-                                  UnityWidget(
-                                    onUnityCreated: onUnityCreated,
-                                    fullscreen: false,
-                                  ),
-                                  MaterialButton(
-                                    height: 200,
-                                    minWidth: 200,
-                                    onPressed: () => showWhatNow(context),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
+                          GestureDetector(
+                            onTap: () => showWhatNow(context),
+                            onHorizontalDragEnd: (details) {
+                              if (details.primaryVelocity! < 0) {
+                                setActive('WaitGirl');
+                              } else {
+                                setActive('SleepBoy');
+                              }
+                            },
+                          )
+                          // MaterialButton(
+                          //   height: 200,
+                          //   minWidth: 200,
+                          //   onPressed: () => showWhatNow(context),
+                          // )
                         ],
                       ),
                     ),
@@ -204,7 +184,7 @@ class HomePageState extends ConsumerState<HomePage> {
               ImageButton(
                 imageName: '${whatnowpath}WalkGirl.jpg',
                 onPressd: (() {
-                  setActive('Walkgirl');
+                  setActive('WalkGirl');
                   GoRouter.of(context).pop();
                 }),
               ),
@@ -257,6 +237,26 @@ class HomePageState extends ConsumerState<HomePage> {
     unityWidgetController.postMessage(
       'ActiveChanger',
       'VanishSleepGirl',
+      '',
+    );
+    unityWidgetController.postMessage(
+      'ActiveChanger',
+      'VanishWaitBoy',
+      '',
+    );
+    unityWidgetController.postMessage(
+      'ActiveChanger',
+      'VanishWalkBoy',
+      '',
+    );
+    unityWidgetController.postMessage(
+      'ActiveChanger',
+      'VanishWorkBoy',
+      '',
+    );
+    unityWidgetController.postMessage(
+      'ActiveChanger',
+      'VanishSleepBoy',
       '',
     );
 

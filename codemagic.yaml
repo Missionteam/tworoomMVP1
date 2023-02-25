@@ -16,7 +16,10 @@ workflows:
                 xcode-project use-profiles
             - name: Clean
               script: |
-                flutter pub cache repair                       
+                flutter pub cache repair
+            - name: list up
+              script: |
+                ls                       
             - name: Get Flutter packages
               script: | 
                  flutter pub get
