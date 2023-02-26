@@ -72,13 +72,33 @@ final talkroomReferenceProvider = FutureProvider((ref) async {
     final initPostDoc = talkDocroomRef.collection(Consts.posts).doc('init');
     initPostDoc.set(initpost.toJson());
 
-    final initroom = Room(
-        roomname: 'General',
+    final _initroom = Room(
+        roomname: '日常会話の部屋',
         roomId: 'init',
         reference: talkDocroomRef.collection(Consts.rooms).doc('init'));
-    final initRoomDoc = talkDocroomRef.collection(Consts.rooms).doc('init');
+    final _initRoomDoc = talkDocroomRef.collection(Consts.rooms).doc('init');
+    final _tweetroom = Room(
+        roomname: 'つぶやきの部屋',
+        roomId: 'tweet',
+        reference: talkDocroomRef.collection(Consts.rooms).doc('tweet'));
+    final _tweetRoomDoc = talkDocroomRef.collection(Consts.rooms).doc('tweet');
+    final _dateroom = Room(
+        roomname: '行きたいところの部屋',
+        roomId: 'date',
+        reference: talkDocroomRef.collection(Consts.rooms).doc('date'));
+    final _dateRoomDoc = talkDocroomRef.collection(Consts.rooms).doc('date');
+    final _hobbyroom = Room(
+        roomname: '趣味を語る部屋',
+        roomId: 'hobby',
+        reference: talkDocroomRef.collection(Consts.rooms).doc('hobby'));
+    final _hobbyRoomDoc = talkDocroomRef.collection(Consts.rooms).doc('hobby');
+    final _myroom = Room(
+        roomname: '趣味を語る部屋',
+        roomId: 'my',
+        reference: talkDocroomRef.collection(Consts.rooms).doc('my'));
+    final _myRoomDoc = talkDocroomRef.collection(Consts.rooms).doc('my');
 
-    initRoomDoc.set(initroom.toJson());
+    _initRoomDoc.set(_initroom.toJson());
   }
 
   if (talkroomDoc.exists) {
