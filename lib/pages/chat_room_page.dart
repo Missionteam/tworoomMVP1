@@ -5,16 +5,15 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_unity_widget/flutter_unity_widget.dart';
-import 'package:flutter_unity_widget_example/models/room_id_model.dart';
-import 'package:flutter_unity_widget_example/pages/room_page2.dart';
-import 'package:flutter_unity_widget_example/providers/rooms_provider.dart';
+
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:flutter_unity_widget_example/models/post.dart';
-import 'package:flutter_unity_widget_example/providers/posts_provider.dart';
-import 'package:flutter_unity_widget_example/widgets/fundomental/post_widget.dart';
-import 'package:flutter_unity_widget_example/pages/my_page.dart';
+import '../models/post.dart';
+import '../models/room_id_model.dart';
+import '../providers/posts_provider.dart';
+import '../providers/rooms_provider.dart';
+import '../widgets/fundomental/post_widget.dart';
 
 class ChatRoomPage extends ConsumerStatefulWidget {
   ChatRoomPage({super.key});

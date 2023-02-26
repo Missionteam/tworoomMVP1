@@ -2,12 +2,13 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_unity_widget_example/models/post.dart';
+
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_unity_widget_example/allConstants/all_constants.dart';
 
-import 'package:flutter_unity_widget_example/models/user.dart';
+import '../allConstants/all_constants.dart';
+import 'post.dart';
+import 'user.dart';
 
 final authenticationProvider = Provider((ref) {
   return Authentication(ref);

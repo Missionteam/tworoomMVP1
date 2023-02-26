@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_unity_widget_example/models/room_id_model.dart';
-import 'package:flutter_unity_widget_example/pages/auth/error_screen.dart';
-import 'package:flutter_unity_widget_example/pages/auth/loading_screen.dart';
-import 'package:flutter_unity_widget_example/pages/home_page.dart';
-import 'package:flutter_unity_widget_example/providers/auth_provider.dart';
-import 'package:flutter_unity_widget_example/providers/rooms_provider.dart';
 
-import 'package:flutter_unity_widget_example/allConstants/all_constants.dart';
-import 'package:flutter_unity_widget_example/pages/auth/sign_in_page.dart';
+import '../allConstants/color_constants.dart';
+import '../allConstants/size_constants.dart';
+import '../models/room_id_model.dart';
+import '../pages/auth/error_screen.dart';
+import '../pages/auth/loading_screen.dart';
+import '../pages/auth/sign_in_page.dart';
+import '../pages/home_page.dart';
+import '../providers/auth_provider.dart';
+import '../providers/rooms_provider.dart';
 
 class SplashPage extends ConsumerStatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
