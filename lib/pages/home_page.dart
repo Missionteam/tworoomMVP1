@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_unity_widget/flutter_unity_widget.dart';
-import 'package:flutter_unity_widget_example/models/gage_model.dart';
-import 'package:flutter_unity_widget_example/providers/users_provider.dart';
-import 'package:flutter_unity_widget_example/widgets/image_buttom.dart';
-import 'package:flutter_unity_widget_example/widgets/specific/triangle_painter.dart';
-import 'package:flutter_unity_widget_example/widgets/specific/whatNow/what_now_dialog.dart';
+
 import 'package:go_router/go_router.dart';
 
-import 'package:flutter_unity_widget_example/widgets/specific/sorryButton/sorry_dialog.dart';
+import '../models/gage_model.dart';
+import '../providers/users_provider.dart';
+import '../widgets/image_buttom.dart';
+import '../widgets/specific/sorryButton/sorry_dialog.dart';
+import '../widgets/specific/triangle_painter.dart';
+import '../widgets/specific/whatNow/what_now_dialog.dart';
 
 class HomePage extends ConsumerStatefulWidget {
   const HomePage({super.key});

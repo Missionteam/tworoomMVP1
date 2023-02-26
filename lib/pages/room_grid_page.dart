@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_unity_widget_example/widgets/specific/RoomGridPage/widges_yellow%20copy.dart';
+
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:flutter_unity_widget_example/widgets/specific/RoomGridPage/widges_2red.dart';
-import 'package:flutter_unity_widget_example/widgets/specific/RoomGridPage/widges_green.dart';
-import 'package:flutter_unity_widget_example/widgets/specific/RoomGridPage/widges_red%20copy.dart';
 import 'package:dotted_border/dotted_border.dart';
+
+import '../widgets/specific/RoomGridPage/widges_2red.dart';
+import '../widgets/specific/RoomGridPage/widges_green.dart';
+import '../widgets/specific/RoomGridPage/widges_red copy.dart';
+import '../widgets/specific/RoomGridPage/widges_yellow copy.dart';
 
 class RoomGridPage extends ConsumerStatefulWidget {
   const RoomGridPage({super.key});

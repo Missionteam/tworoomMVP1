@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_unity_widget_example/models/gage_model.dart';
-import 'package:flutter_unity_widget_example/widgets/grid_view_dialog.dart';
+
 import 'package:google_fonts/google_fonts.dart';
+
+import '../../../models/gage_model.dart';
+import '../../grid_view_dialog.dart';
 
 class SorryGirdDialog extends ConsumerStatefulWidget {
   const SorryGirdDialog({super.key});

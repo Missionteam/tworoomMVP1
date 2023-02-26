@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_unity_widget_example/pages/reply_page.dart';
+
 import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
 
-import 'package:flutter_unity_widget_example/models/post.dart';
-import 'package:flutter_unity_widget_example/models/room.dart';
+import '../../models/post.dart';
+import '../../models/room.dart';
+import '../../pages/reply_page.dart';
 
 class PostWidget extends ConsumerWidget {
   const PostWidget({

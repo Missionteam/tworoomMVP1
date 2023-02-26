@@ -1,10 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_unity_widget_example/models/post.dart';
-import 'package:flutter_unity_widget_example/providers/firestore_provider.dart';
-import 'package:flutter_unity_widget_example/providers/talkroom_provider.dart';
 
-import 'package:flutter_unity_widget_example/allConstants/all_Constants.dart';
+import '../allConstants/all_constants.dart';
+import '../models/post.dart';
+import 'firestore_provider.dart';
+import 'talkroom_provider.dart';
 
 ///postReferenceProviderが提供する
 ///ReferenceにあるPostを取得するプロバイダー

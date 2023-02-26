@@ -1,9 +1,10 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter_unity_widget_example/models/room.dart';
-import 'package:flutter_unity_widget_example/models/room_id_model.dart';
-import 'package:flutter_unity_widget_example/providers/firestore_provider.dart';
-import 'package:flutter_unity_widget_example/providers/talkroom_provider.dart';
+
+import '../models/room.dart';
+import '../models/room_id_model.dart';
+import 'firestore_provider.dart';
+import 'talkroom_provider.dart';
 
 final roomsProvider = StreamProvider((ref) {
   final roomsReference = ref.watch(roomsReferenceProvider);

@@ -1,10 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_unity_widget_example/allConstants/all_constants.dart';
-import 'package:flutter_unity_widget_example/models/user.dart';
-import 'package:flutter_unity_widget_example/providers/auth_provider.dart';
-import 'package:flutter_unity_widget_example/providers/firestore_provider.dart';
+
+import '../allConstants/all_constants.dart';
+import '../models/user.dart';
+import 'auth_provider.dart';
+import 'firestore_provider.dart';
 
 final AppUsersReferenceProvider = Provider<CollectionReference<AppUser>>((ref) {
   final userReference = ref.read(firestoreProvider).collection(Consts.users);

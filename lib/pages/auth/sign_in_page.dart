@@ -1,14 +1,14 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_unity_widget_example/models/auth_model.dart';
-import 'package:flutter_unity_widget_example/models/room_id_model.dart';
-import 'package:flutter_unity_widget_example/pages/auth/error_screen.dart';
-import 'package:flutter_unity_widget_example/pages/auth/loading_screen.dart';
-import 'package:flutter_unity_widget_example/pages/home_page.dart';
 
-import 'package:flutter_unity_widget_example/providers/rooms_provider.dart';
-import 'package:flutter_unity_widget_example/providers/talkroom_provider.dart';
+import '../../models/auth_model.dart';
+import '../../models/room_id_model.dart';
+import '../../providers/rooms_provider.dart';
+import '../../providers/talkroom_provider.dart';
+import '../home_page.dart';
+import 'error_screen.dart';
+import 'loading_screen.dart';
 
 enum Status {
   login,

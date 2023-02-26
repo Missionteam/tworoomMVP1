@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_unity_widget_example/pages/auth/error_screen.dart';
-import 'package:flutter_unity_widget_example/pages/auth/loading_screen.dart';
-import 'package:flutter_unity_widget_example/pages/home_page.dart';
-import 'package:flutter_unity_widget_example/pages/auth/sign_in_page.dart';
-import 'package:flutter_unity_widget_example/providers/auth_provider.dart';
+import 'package:tworoom/pages/auth/sign_in_page.dart';
+
+import '../../providers/auth_provider.dart';
+import '../home_page.dart';
+import 'error_screen.dart';
+import 'loading_screen.dart';
 
 class AuthChecker extends ConsumerWidget {
   const AuthChecker({Key? key}) : super(key: key);

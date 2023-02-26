@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_unity_widget_example/models/gage_model.dart';
+
+import '../../models/gage_model.dart';
 
 class DrawTriangle extends CustomPainter {
   WidgetRef ref;

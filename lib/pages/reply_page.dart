@@ -2,10 +2,11 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_unity_widget_example/allConstants/all_constants.dart';
-import 'package:flutter_unity_widget_example/models/post.dart';
-import 'package:flutter_unity_widget_example/models/room_id_model.dart';
-import 'package:flutter_unity_widget_example/widgets/fundomental/post_widget.dart';
+
+import '../allConstants/all_constants.dart';
+import '../models/post.dart';
+import '../models/room_id_model.dart';
+import '../widgets/fundomental/post_widget.dart';
 
 class ReplyPage extends ConsumerStatefulWidget {
   const ReplyPage({super.key, required this.post});
