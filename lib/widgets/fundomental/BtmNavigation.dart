@@ -17,6 +17,7 @@ class ScaffoldWithNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     const backgroundColor = Color.fromARGB(255, 3, 23, 77);
     return Scaffold(
+        resizeToAvoidBottomInset: true,
         body: child,
         bottomNavigationBar: SizedBox(
           height: 80,
@@ -39,12 +40,12 @@ class ScaffoldWithNavBar extends StatelessWidget {
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.textsms_outlined),
-                label: 'MyRoom',
+                label: 'Note',
                 backgroundColor: backgroundColor,
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.account_circle_outlined),
-                label: 'Note',
+                label: 'Settings',
                 backgroundColor: backgroundColor,
               ),
             ],

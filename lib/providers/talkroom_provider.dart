@@ -99,6 +99,10 @@ final talkroomReferenceProvider = FutureProvider((ref) async {
     final _myRoomDoc = talkDocroomRef.collection(Consts.rooms).doc('my');
 
     _initRoomDoc.set(_initroom.toJson());
+    _tweetRoomDoc.set(_tweetroom.toJson());
+    _dateRoomDoc.set(_dateroom.toJson());
+    _hobbyRoomDoc.set(_hobbyroom.toJson());
+    _myRoomDoc.set(_myroom.toJson());
   }
 
   if (talkroomDoc.exists) {

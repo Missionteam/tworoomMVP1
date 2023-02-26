@@ -43,9 +43,7 @@ class YellowRoomBox extends ConsumerWidget {
                 height: 240,
                 child: MaterialButton(
                   onPressed: () {
-                    ref
-                        .watch(roomIdProvider.notifier)
-                        .setRoomId('EtVpI0aO3yyOzLfrruXQ');
+                    ref.watch(roomIdProvider.notifier).setRoomId('hobby');
                     GoRouter.of(context).push('/RoomGrid/Chat');
                   },
                 ))

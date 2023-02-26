@@ -74,6 +74,7 @@ class _ChatPageState extends ConsumerState<ChatPage> {
       },
 
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         // appBar: AppBar(
         //   title: Text(currentRoomName ?? '',
         //       style: TextStyle(color: Colors.black)),

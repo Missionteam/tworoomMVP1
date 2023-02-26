@@ -77,9 +77,7 @@ class RedRoomBox extends ConsumerWidget {
               height: 200,
               child: MaterialButton(
                 onPressed: () {
-                  ref
-                      .watch(roomIdProvider.notifier)
-                      .setRoomId('BWFcU9owLQbdSStahSw4');
+                  ref.watch(roomIdProvider.notifier).setRoomId('tweet');
                   GoRouter.of(context).push('/RoomGrid/Chat');
                 },
               ))

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class GridViewDialog extends StatefulWidget {
+class GridViewDialog extends ConsumerStatefulWidget {
   GridViewDialog(
       {Key? key,
       this.Screenpadding =
@@ -9,12 +10,11 @@ class GridViewDialog extends StatefulWidget {
       : super(key: key);
   EdgeInsetsGeometry Screenpadding;
   List<Widget> children;
-
   @override
-  State<GridViewDialog> createState() => _GridViewDialogState();
+  ConsumerState<ConsumerStatefulWidget> createState() => _GridViewDialogState();
 }
 
-class _GridViewDialogState extends State<GridViewDialog> {
+class _GridViewDialogState extends ConsumerState<GridViewDialog> {
   @override
   Widget build(BuildContext context) {
     return Container(

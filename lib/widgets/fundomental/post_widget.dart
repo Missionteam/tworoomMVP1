@@ -69,6 +69,7 @@ class PostWidget extends ConsumerWidget {
                       ),
                       onPressed: () {
                         showModalBottomSheet<void>(
+                          useRootNavigator: true,
                           context: context,
                           builder: (BuildContext context) {
                             return SizedBox(
