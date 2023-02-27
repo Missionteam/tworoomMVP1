@@ -45,14 +45,11 @@
 	<false/>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
-<<<<<<< Updated upstream
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>io.flutter.embedded_views_preview</key>
 	<string>YES</string>
-=======
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
->>>>>>> Stashed changes
 </dict>
 </plist>
