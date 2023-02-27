@@ -1,6 +1,3421 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:UnityLibrary"
+      name = "UnityLibrary">
+      <FileRef
+         location = "group:LaunchScreen-iPhone.storyboard">
+      </FileRef>
+      <Group
+         location = "group:Unity-iPhone Tests"
+         name = "Unity-iPhone Tests">
+         <Group
+            location = "group:en.lproj"
+            name = "en.lproj">
+            <FileRef
+               location = "group:InfoPlist.strings">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Unity-iPhone Tests-Prefix.pch">
+         </FileRef>
+         <FileRef
+            location = "group:Unity_iPhone_Tests.m">
+         </FileRef>
+         <FileRef
+            location = "group:Unity-iPhone Tests-Info.plist">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:LaunchScreen-iPhonePortrait.png">
+      </FileRef>
+      <FileRef
+         location = "group:LaunchScreen-iPhoneLandscape.png">
+      </FileRef>
+      <Group
+         location = "group:Classes"
+         name = "Classes">
+         <Group
+            location = "group:Unity"
+            name = "Unity">
+            <FileRef
+               location = "group:UnityTrampolineCompatibility.h">
+            </FileRef>
+            <FileRef
+               location = "group:UnityReplayKit.mm">
+            </FileRef>
+            <FileRef
+               location = "group:CVTextureCache.h">
+            </FileRef>
+            <FileRef
+               location = "group:UnityInterface.h">
+            </FileRef>
+            <FileRef
+               location = "group:UnityWebRequest.mm">
+            </FileRef>
+            <FileRef
+               location = "group:OnDemandResources.mm">
+            </FileRef>
+            <FileRef
+               location = "group:AVCapture.mm">
+            </FileRef>
+            <FileRef
+               location = "group:IUnityInterface.h">
+            </FileRef>
+            <FileRef
+               location = "group:UnityForwardDecls.h">
+            </FileRef>
+            <FileRef
+               location = "group:InternalProfiler.h">
+            </FileRef>
+            <FileRef
+               location = "group:CMVideoSampling.h">
+            </FileRef>
+            <FileRef
+               location = "group:ObjCRuntime.h">
+            </FileRef>
+            <FileRef
+               location = "group:InternalProfiler.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:CVTextureCache.mm">
+            </FileRef>
+            <FileRef
+               location = "group:DeviceSettings.mm">
+            </FileRef>
+            <FileRef
+               location = "group:UnityMetalSupport.h">
+            </FileRef>
+            <FileRef
+               location = "group:CameraCapture.h">
+            </FileRef>
+            <FileRef
+               location = "group:FullScreenVideoPlayer.mm">
+            </FileRef>
+            <FileRef
+               location = "group:UnityReplayKit.h">
+            </FileRef>
+            <FileRef
+               location = "group:DisplayManager.mm">
+            </FileRef>
+            <FileRef
+               location = "group:CameraCapture.mm">
+            </FileRef>
+            <FileRef
+               location = "group:UnityReplayKit_Scripting.mm">
+            </FileRef>
+            <FileRef
+               location = "group:UnitySharedDecls.h">
+            </FileRef>
+            <FileRef
+               location = "group:UnityRendering.h">
+            </FileRef>
+            <FileRef
+               location = "group:MetalHelper.mm">
+            </FileRef>
+            <FileRef
+               location = "group:CMVideoSampling.mm">
+            </FileRef>
+            <FileRef
+               location = "group:VideoPlayer.h">
+            </FileRef>
+            <FileRef
+               location = "group:AVCapture.h">
+            </FileRef>
+            <FileRef
+               location = "group:VideoPlayer.mm">
+            </FileRef>
+            <FileRef
+               location = "group:DisplayManager.h">
+            </FileRef>
+            <FileRef
+               location = "group:NoGraphicsHelper.mm">
+            </FileRef>
+            <FileRef
+               location = "group:IUnityGraphics.h">
+            </FileRef>
+            <FileRef
+               location = "group:IUnityGraphicsMetal.h">
+            </FileRef>
+            <FileRef
+               location = "group:Filesystem.mm">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:UI"
+            name = "UI">
+            <FileRef
+               location = "group:OrientationSupport.mm">
+            </FileRef>
+            <FileRef
+               location = "group:UnityAppController+ViewHandling.h">
+            </FileRef>
+            <FileRef
+               location = "group:SplashScreen.h">
+            </FileRef>
+            <FileRef
+               location = "group:UnityView+Keyboard.mm">
+            </FileRef>
+            <FileRef
+               location = "group:ActivityIndicator.h">
+            </FileRef>
+            <FileRef
+               location = "group:UnityView+iOS.h">
+            </FileRef>
+            <FileRef
+               location = "group:Keyboard.mm">
+            </FileRef>
+            <FileRef
+               location = "group:UnityView.mm">
+            </FileRef>
+            <FileRef
+               location = "group:UnityViewControllerBase+iOS.mm">
+            </FileRef>
+            <FileRef
+               location = "group:UnityViewControllerBase+iOS.h">
+            </FileRef>
+            <FileRef
+               location = "group:UnityView+tvOS.h">
+            </FileRef>
+            <FileRef
+               location = "group:UnityViewControllerBase.mm">
+            </FileRef>
+            <FileRef
+               location = "group:OrientationSupport.h">
+            </FileRef>
+            <FileRef
+               location = "group:UnityView+tvOS.mm">
+            </FileRef>
+            <FileRef
+               location = "group:Keyboard.h">
+            </FileRef>
+            <FileRef
+               location = "group:SplashScreen.mm">
+            </FileRef>
+            <FileRef
+               location = "group:ActivityIndicator.mm">
+            </FileRef>
+            <FileRef
+               location = "group:StoreReview.m">
+            </FileRef>
+            <FileRef
+               location = "group:UnityAppController+ViewHandling.mm">
+            </FileRef>
+            <FileRef
+               location = "group:UnityView.h">
+            </FileRef>
+            <FileRef
+               location = "group:UnityViewControllerBase+tvOS.mm">
+            </FileRef>
+            <FileRef
+               location = "group:UnityViewControllerBase+tvOS.h">
+            </FileRef>
+            <FileRef
+               location = "group:UnityViewControllerBase.h">
+            </FileRef>
+            <FileRef
+               location = "group:UnityView+iOS.mm">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:UndefinePlatforms.h">
+         </FileRef>
+         <FileRef
+            location = "group:PLCrashReporter.h">
+         </FileRef>
+         <FileRef
+            location = "group:DynamicLibEngineAPI-functions.h">
+         </FileRef>
+         <Group
+            location = "group:Native"
+            name = "Native">
+            <FileRef
+               location = "group:Unity.XR.ARKit_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppGenericAdjustorThunkTable.c">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib9.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Newtonsoft.Json4.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppGenericMethodTable.c">
+            </FileRef>
+            <FileRef
+               location = "group:System6.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Generics4.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml5.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml4.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Generics5.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System7.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Newtonsoft.Json5.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib8.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.Physics2DModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppCCTypeValuesTable.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.JSONSerializeModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.VisualScripting.Core.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppInteropDataTable.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Newtonsoft.Json7.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Generics7.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System5.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml6.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UIElementsModule9.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UIElementsModule8.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityICallRegistration.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml7.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System4.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Generics6.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml.Linq.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Newtonsoft.Json6.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.VisualScripting.Flow.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:GenericMethods1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UIElementsNativeModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:Newtonsoft.Json2.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Generics2.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml3.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.TextCoreFontEngineModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.PhysicsModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.XR.ARSubsystems1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml2.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Generics3.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Newtonsoft.Json3.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppCCalculateFieldValues2.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Assembly-CSharp.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UI_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.SpriteShapeModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.TextRenderingModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Newtonsoft.Json1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System3.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Generics1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:__Generated_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:System.Configuration.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppCodeRegistration.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System2.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppCCalculateFieldValues1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:__Generated.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.TextMeshPro2.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Core1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib15.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UIElementsModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.VisualScripting.Core6.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Data2.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml14.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppCCalculateTypeValues.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.VisualScripting.Antlr3.Runtime.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Data_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppCCalculateFieldValues.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.AudioModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.XRModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppGenericMethodPointerTable.c">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml15.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Data3.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib14.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.TextMeshPro3.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.CoreModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.AnimationModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.AnimationModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.TextRenderingModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:System.Runtime.Serialization.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.TextMeshPro1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Core2.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib16.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.VisualScripting.Antlr3.Runtime_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.VisualScripting.Core5.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Data1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System10.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System11.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml16.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.VisualScripting.Core4.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib17.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Core3.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.TextMeshPro4.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.GameCenterModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.XRModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.VisualScripting.Flow3.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib13.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Data4.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml12.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Mono.Security1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.InputModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.VisualScripting.Core1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml13.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Data5.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib12.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.VisualScripting.Flow2.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.TextMeshPro5.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.TextMeshPro.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Newtonsoft.Json_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:System.Core4.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib10.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.XR.ARSubsystems.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Data7.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml11.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.VisualScripting.Core3.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppRgctxTable.c">
+            </FileRef>
+            <FileRef
+               location = "group:UnityClassRegistration.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.InputModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.VisualScripting.Antlr3.Runtime1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.VisualScripting.Core2.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml10.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Data6.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.InputLegacyModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.VisualScripting.Flow1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib11.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.VisualScripting.State.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.TextMeshPro6.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.SpriteShapeModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UIElementsModule11.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.IMGUIModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppTypeDefinitions.c">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib20.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UI.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.IMGUIModule1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UIModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.XR.Management_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib21.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UIElementsModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UIElementsModule10.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UIElementsModule12.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.SharedInternalsModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.TextCoreTextEngineModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib23.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Data8.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppMetadataRegistration.c">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.Physics2DModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Data9.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib22.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppGenericMethodDefinitions.c">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.XR.Management.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.VisualScripting.Core_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:System.Runtime.Serialization_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.AIModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.VisualScripting.State_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.SharedInternalsModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.TextCoreTextEngineModule2.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UIModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:System.Data.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Mono.Security.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.TextCoreTextEngineModule3.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Configuration_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.JSONSerializeModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.TextCoreTextEngineModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib19.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.TextCoreTextEngineModule1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.SubsystemsModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.GridModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppMetadataUsage.c">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppReversePInvokeWrapperTable.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Newtonsoft.Json.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib18.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.VisualScripting.Flow_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UIElementsNativeModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppInvokerTable.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UI1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Mono.Security_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:Assembly-CSharp1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UIElementsModule3.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.SubsystemsModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UIElementsModule2.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.CoreModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppGenericClassTable.c">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.GridModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.CoreModule1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Numerics.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppGenericInstDefinitions.c">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.PhysicsModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppCCalculateTypeValues1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.TextCoreFontEngineModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UI2.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib3.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.GameCenterModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.TilemapModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.ParticleSystemModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UIElementsModule1.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Il2CppCCFieldValuesTable.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.CoreModule2.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib2.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Core_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UI3.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:GenericMethods.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.TilemapModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib6.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.XR.ARKit.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnresolvedVirtualCallStubs.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System9.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UIElementsModule5.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UIElementsModule4.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.IMGUIModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Core.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System8.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.InputLegacyModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib7.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.AIModule.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.ParticleSystemModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib5.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Assembly-CSharp_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.XR.ARSubsystems_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:Newtonsoft.Json8.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Numerics_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.AudioModule_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml9.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UIElementsModule6.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:UnityEngine.UIElementsModule7.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml8.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Generics.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:System.Xml.Linq_CodeGen.c">
+            </FileRef>
+            <FileRef
+               location = "group:mscorlib4.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Unity.TextMeshPro_CodeGen.c">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:iPhone_Sensors.h">
+         </FileRef>
+         <FileRef
+            location = "group:UnityAppController.mm.bak">
+         </FileRef>
+         <FileRef
+            location = "group:Prefix.pch">
+         </FileRef>
+         <FileRef
+            location = "group:RedefinePlatforms.h">
+         </FileRef>
+         <FileRef
+            location = "group:main.mm">
+         </FileRef>
+         <FileRef
+            location = "group:UnityAppController+Rendering.mm">
+         </FileRef>
+         <FileRef
+            location = "group:UnityAppController.h">
+         </FileRef>
+         <FileRef
+            location = "group:CrashReporter.mm">
+         </FileRef>
+         <FileRef
+            location = "group:UnityAppController+Rendering.h">
+         </FileRef>
+         <FileRef
+            location = "group:DynamicLibEngineAPI.mm">
+         </FileRef>
+         <FileRef
+            location = "group:UnityTrampolineConfigure.h">
+         </FileRef>
+         <FileRef
+            location = "group:UnityAppController.mm">
+         </FileRef>
+         <FileRef
+            location = "group:CrashReporter.h">
+         </FileRef>
+         <FileRef
+            location = "group:UnityAppController.h.bak">
+         </FileRef>
+         <FileRef
+            location = "group:UnityAppController+UnityInterface.mm">
+         </FileRef>
+         <FileRef
+            location = "group:Quaternion4.h">
+         </FileRef>
+         <FileRef
+            location = "group:iPhone_Sensors.mm">
+         </FileRef>
+         <FileRef
+            location = "group:UnityAppController+UnityInterface.h">
+         </FileRef>
+         <FileRef
+            location = "group:Vector3.h">
+         </FileRef>
+         <FileRef
+            location = "group:Preprocessor.h">
+         </FileRef>
+         <Group
+            location = "group:PluginBase"
+            name = "PluginBase">
+            <FileRef
+               location = "group:RenderPluginDelegate.mm">
+            </FileRef>
+            <FileRef
+               location = "group:AppDelegateListener.mm">
+            </FileRef>
+            <FileRef
+               location = "group:LifeCycleListener.h">
+            </FileRef>
+            <FileRef
+               location = "group:RenderPluginDelegate.h">
+            </FileRef>
+            <FileRef
+               location = "group:UnityViewControllerListener.mm">
+            </FileRef>
+            <FileRef
+               location = "group:LifeCycleListener.mm">
+            </FileRef>
+            <FileRef
+               location = "group:AppDelegateListener.h">
+            </FileRef>
+            <FileRef
+               location = "group:UnityViewControllerListener.h">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:LaunchScreen-iPad.storyboard">
+      </FileRef>
+      <FileRef
+         location = "group:process_symbols.sh">
+      </FileRef>
+      <Group
+         location = "group:Libraries"
+         name = "Libraries">
+         <FileRef
+            location = "group:Il2CppOptions.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:IL2CPPOptions.cpp.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:RegisterFeatures.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:libiPhone-lib.a">
+         </FileRef>
+         <Group
+            location = "group:FlutterUnityIntegration"
+            name = "FlutterUnityIntegration">
+            <Group
+               location = "group:Plugins"
+               name = "Plugins">
+               <Group
+                  location = "group:iOS"
+                  name = "iOS">
+                  <FileRef
+                     location = "group:NativeCallProxy.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:NativeCallProxy.mm">
+                  </FileRef>
+               </Group>
+            </Group>
+         </Group>
+         <FileRef
+            location = "group:baselib.a">
+         </FileRef>
+         <FileRef
+            location = "group:libil2cpp.a">
+         </FileRef>
+         <Group
+            location = "group:external"
+            name = "external">
+            <Group
+               location = "group:baselib"
+               name = "baselib">
+               <Group
+                  location = "group:Platforms"
+                  name = "Platforms">
+                  <Group
+                     location = "group:IOS"
+                     name = "IOS">
+                     <Group
+                        location = "group:Include"
+                        name = "Include">
+                        <FileRef
+                           location = "group:BaselibPlatformSpecificEnvironment.h">
+                        </FileRef>
+                        <Group
+                           location = "group:C"
+                           name = "C">
+                           <FileRef
+                              location = "group:Baselib_FileIO.inl.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:Baselib_ErrorState.inl.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:Baselib_DynamicLibrary.inl.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:Baselib_ThreadLocalStorage.inl.h">
+                           </FileRef>
+                        </Group>
+                     </Group>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:Include"
+                  name = "Include">
+                  <Group
+                     location = "group:Internal"
+                     name = "Internal">
+                     <FileRef
+                        location = "group:UndefineCoreMacros.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:CoreMacros.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UndefineCompilerMacros.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:VerifyPlatformEnvironment.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:PlatformEnvironment.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:BasicTypes.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:PlatformDetection.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Assert.h">
+                     </FileRef>
+                     <Group
+                        location = "group:Compiler"
+                        name = "Compiler">
+                        <FileRef
+                           location = "group:CompilerEnvironmentGcc.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:CompilerEnvironmentClang.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:CompilerEnvironmentMsvc.h">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:ArchitectureDetection.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:RedefineCompilerMacros.h">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:PostExternalInclude.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:PreExternalInclude.h">
+                  </FileRef>
+                  <Group
+                     location = "group:Cpp"
+                     name = "Cpp">
+                     <FileRef
+                        location = "group:Baselib_DynamicLibrary.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Time.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:fallback_allocator.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Semaphore.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:CountdownTimer.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:tlsf_allocator.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:CappedSemaphore.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:BinarySemaphore.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:EventSemaphore.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:mpmc_fixed_queue.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:page_allocator.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Algorithm.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Barrier.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:mpsc_node_queue.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:ThreadLocalStorage.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Lock.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:ConditionVariable.h">
+                     </FileRef>
+                     <Group
+                        location = "group:Internal"
+                        name = "Internal">
+                        <FileRef
+                           location = "group:TypeTraits.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:heap_allocator.inl.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:ConditionVariableData_SemaphoreBased.inl.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:page_allocator.inl.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:ConditionVariable_SemaphoreBased.inl.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Algorithm.inl.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:ConditionVariable_FutexBased.inl.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:tlsf_allocator.inl.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:ConditionVariableData_FutexBased.inl.h">
+                        </FileRef>
+                        <Group
+                           location = "group:Compiler"
+                           name = "Compiler">
+                           <Group
+                              location = "group:Msvc"
+                              name = "Msvc">
+                              <FileRef
+                                 location = "group:AlgorithmMsvc.inl.h">
+                              </FileRef>
+                           </Group>
+                           <Group
+                              location = "group:ClangOrGcc"
+                              name = "ClangOrGcc">
+                              <FileRef
+                                 location = "group:AlgorithmClangOrGcc.inl.h">
+                              </FileRef>
+                           </Group>
+                        </Group>
+                     </Group>
+                     <FileRef
+                        location = "group:mpsc_node_stack.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:HighCapacitySemaphore.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:mpmc_node.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Thread.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Stopwatch.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:mpmc_node_queue.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:ReentrantLock.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:heap_allocator.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:mpmc_node_stack.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:affix_allocator.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:mpsc_node.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Atomic.h">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:Baselib.h">
+                  </FileRef>
+                  <Group
+                     location = "group:C"
+                     name = "C">
+                     <FileRef
+                        location = "group:Baselib_DynamicLibrary.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_SourceLocation.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_Debug.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_Atomic_LLSC.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_Lock.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_Atomic_Macros.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_Alignment.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_Process.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_Semaphore.h">
+                     </FileRef>
+                     <Group
+                        location = "group:Internal"
+                        name = "Internal">
+                        <FileRef
+                           location = "group:Baselib_ReentrantLock.inl.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Baselib_Lock_FutexBased.inl.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Baselib_EventSemaphore_SemaphoreBased.inl.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Baselib_Semaphore_SemaphoreBased.inl.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Baselib_Lock_SemaphoreBased.inl.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Baselib_EventSemaphore_FutexBased.inl.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Baselib_EnumSizeCheck.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Baselib_HighCapacitySemaphore_SemaphoreBased.inl.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Baselib_HighCapacitySemaphore_FutexBased.inl.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Baselib_Semaphore_FutexBased.inl.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Baselib_CappedSemaphore_FutexBased.inl.h">
+                        </FileRef>
+                        <Group
+                           location = "group:Compiler"
+                           name = "Compiler">
+                           <FileRef
+                              location = "group:Baselib_Atomic_MsvcIntrinsics.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:Baselib_Atomic_LLSC_Gcc.inl.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:Baselib_Atomic_Gcc_Apple_LLVM_Patch_PostInclude.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:Baselib_Atomic_Gcc_Apple_LLVM_Patch.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:Baselib_Atomic_Msvc.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:Baselib_Atomic_Gcc.h">
+                           </FileRef>
+                        </Group>
+                        <FileRef
+                           location = "group:Baselib_CappedSemaphore_SemaphoreBased.inl.h">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:Baselib_SystemFutex.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_ErrorCode.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_FileIO.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_Memory.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_RegisteredNetwork.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_NetworkAddress.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_Timer.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_WakeupFallbackStrategy.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_Thread.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_StaticAssert.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_CountdownTimer.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_Atomic_TypeSafe.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_SystemSemaphore.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_Atomic.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_ErrorState.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_ThreadLocalStorage.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_EventSemaphore.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_Socket.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_CappedSemaphore.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_HighCapacitySemaphore.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Baselib_ReentrantLock.h">
+                     </FileRef>
+                  </Group>
+               </Group>
+            </Group>
+         </Group>
+         <Group
+            location = "group:com.unity.xr.arkit"
+            name = "com.unity.xr.arkit">
+            <Group
+               location = "group:Runtime"
+               name = "Runtime">
+               <Group
+                  location = "group:iOS"
+                  name = "iOS">
+                  <FileRef
+                     location = "group:UnityARKit.m">
+                  </FileRef>
+                  <Group
+                     location = "group:Xcode1300"
+                     name = "Xcode1300">
+                     <FileRef
+                        location = "group:libUnityARKit.a">
+                     </FileRef>
+                  </Group>
+               </Group>
+            </Group>
+         </Group>
+         <Group
+            location = "group:libil2cpp"
+            name = "libil2cpp">
+            <Group
+               location = "group:include"
+               name = "include">
+               <FileRef
+                  location = "group:il2cpp-windowsruntime-types.h">
+               </FileRef>
+               <Group
+                  location = "group:pch"
+                  name = "pch">
+                  <FileRef
+                     location = "group:pch-cpp.hpp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:pch-c.h">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:il2cpp-runtime-stats.h">
+               </FileRef>
+               <FileRef
+                  location = "group:il2cpp-number-formatter.h">
+               </FileRef>
+               <FileRef
+                  location = "group:il2cpp-tokentype.h">
+               </FileRef>
+               <FileRef
+                  location = "group:il2cpp-config.h">
+               </FileRef>
+               <FileRef
+                  location = "group:il2cpp-metadata.h">
+               </FileRef>
+               <FileRef
+                  location = "group:il2cpp-api.h">
+               </FileRef>
+               <FileRef
+                  location = "group:il2cpp-string-types.h">
+               </FileRef>
+               <FileRef
+                  location = "group:il2cpp-benchmark-support.h">
+               </FileRef>
+               <FileRef
+                  location = "group:il2cpp-mono-api-functions.h">
+               </FileRef>
+               <FileRef
+                  location = "group:il2cpp-mono-api.h">
+               </FileRef>
+               <FileRef
+                  location = "group:il2cpp-class-internals.h">
+               </FileRef>
+               <FileRef
+                  location = "group:il2cpp-api-types.h">
+               </FileRef>
+               <FileRef
+                  location = "group:il2cpp-config-api.h">
+               </FileRef>
+               <FileRef
+                  location = "group:libil2cpp.icalls">
+               </FileRef>
+               <Group
+                  location = "group:utils"
+                  name = "utils">
+                  <Group
+                     location = "group:utf8-cpp"
+                     name = "utf8-cpp">
+                     <Group
+                        location = "group:source"
+                        name = "source">
+                        <Group
+                           location = "group:utf8"
+                           name = "utf8">
+                           <FileRef
+                              location = "group:core.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:unchecked.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:checked.h">
+                           </FileRef>
+                        </Group>
+                        <FileRef
+                           location = "group:utf8.h">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <FileRef
+                     location = "group:MemoryRead.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:PathUtils.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ThreadSafeFreeList.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ExtendedAtomicTypes.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MemoryPoolAddressSanitizer.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CallOnce.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:TemplateUtils.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:BaselibHandleUtils.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:StringUtils.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dynamic_array.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:New.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Logging.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Output.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Functional.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:StringViewUtils.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Environment.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Il2CppHashSet.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Runtime.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:HashUtils.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:KeyWrapper.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:NonCopyable.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ExceptionSupportStack.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Expected.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DirectoryUtils.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:StringView.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Il2CppHashMap.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MemoryMappedFile.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Memory.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sha1.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MemoryPool.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MarshalingUtils.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Il2CppError.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Exception.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MathUtils.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Collections.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MemoryUtils.h">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:icalls"
+                  name = "icalls">
+                  <Group
+                     location = "group:System.Core"
+                     name = "System.Core">
+                     <Group
+                        location = "group:System.IO.MemoryMappedFiles"
+                        name = "System.IO.MemoryMappedFiles">
+                        <FileRef
+                           location = "group:MemoryMapImpl.h">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <Group
+                     location = "group:mscorlib"
+                     name = "mscorlib">
+                     <Group
+                        location = "group:System.Reflection"
+                        name = "System.Reflection">
+                        <FileRef
+                           location = "group:MethodBase.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:RuntimeFieldInfo.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Assembly.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:RuntimeEventInfo.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:AssemblyName.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:RuntimeConstructorInfo.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:EventInfo.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:RuntimeModule.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:RuntimeMethodInfo.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:MonoMethodInfo.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:FieldInfo.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:CustomAttributeData.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Module.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:RuntimePropertyInfo.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:RuntimeAssembly.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:RuntimeParameterInfo.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Globalization"
+                        name = "System.Globalization">
+                        <Group
+                           location = "group:Generated"
+                           name = "Generated">
+                           <FileRef
+                              location = "group:CultureInfoTablesNet_4_0.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:CultureInfoInternalsNet_4_0.h">
+                           </FileRef>
+                        </Group>
+                        <FileRef
+                           location = "group:RegionInfo.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:CultureInfo.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:CultureInfoInternals.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:CompareInfo.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:CompareOptions.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:CultureInfoTables.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:CultureData.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:CalendarData.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Security.Principal"
+                        name = "System.Security.Principal">
+                        <FileRef
+                           location = "group:WindowsPrincipal.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:WindowsImpersonationContext.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:WindowsIdentity.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Runtime"
+                        name = "System.Runtime">
+                        <FileRef
+                           location = "group:RuntimeImports.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Runtime.Remoting"
+                        name = "System.Runtime.Remoting">
+                        <FileRef
+                           location = "group:RemotingServices.h">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:Interop.h">
+                     </FileRef>
+                     <Group
+                        location = "group:Mono.Security.Cryptography"
+                        name = "Mono.Security.Cryptography">
+                        <FileRef
+                           location = "group:KeyPairPersistence.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Runtime.Remoting.Activation"
+                        name = "System.Runtime.Remoting.Activation">
+                        <FileRef
+                           location = "group:ActivationServices.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Runtime.Remoting.Contexts"
+                        name = "System.Runtime.Remoting.Contexts">
+                        <FileRef
+                           location = "group:Context.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Runtime.Remoting.Proxies"
+                        name = "System.Runtime.Remoting.Proxies">
+                        <FileRef
+                           location = "group:RealProxy.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.IO"
+                        name = "System.IO">
+                        <FileRef
+                           location = "group:DriveInfo.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Path.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:MonoIO.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:Mono.Unity"
+                        name = "Mono.Unity">
+                        <FileRef
+                           location = "group:UnityTls.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Runtime.Remoting.Messaging"
+                        name = "System.Runtime.Remoting.Messaging">
+                        <FileRef
+                           location = "group:MonoMethodMessage.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:AsyncResult.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Security.Policy"
+                        name = "System.Security.Policy">
+                        <FileRef
+                           location = "group:Evidence.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System"
+                        name = "System">
+                        <FileRef
+                           location = "group:Type.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:ArgIterator.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Delegate.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:RuntimeTypeHandle.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:RuntimeType.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:RuntimeMethodHandle.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Enum.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:RuntimeFieldHandle.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:GC.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:DateTime.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Environment.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:ValueType.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Buffer.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:TypedReference.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:NumberFormatter.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:ConsoleDriver.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Array.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Object.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:AppDomain.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:CurrentSystemTimeZone.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Exception.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:CLRConfig.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:MonoCustomAttrs.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:String.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Runtime.Versioning"
+                        name = "System.Runtime.Versioning">
+                        <FileRef
+                           location = "group:VersioningHelper.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:Microsoft.Win32"
+                        name = "Microsoft.Win32">
+                        <FileRef
+                           location = "group:NativeMethods.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Runtime.CompilerServices"
+                        name = "System.Runtime.CompilerServices">
+                        <FileRef
+                           location = "group:RuntimeHelpers.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Text"
+                        name = "System.Text">
+                        <FileRef
+                           location = "group:Normalization.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:EncodingHelper.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:Mono"
+                        name = "Mono">
+                        <FileRef
+                           location = "group:Runtime.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:RuntimeGPtrArrayHandle.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:RuntimeClassHandle.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:SafeStringMarshal.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:RuntimeMarshal.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Threading"
+                        name = "System.Threading">
+                        <FileRef
+                           location = "group:NativeEventCalls.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:OSSpecificSynchronizationContext.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Timer.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Monitor.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Thread.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Mutex.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:WaitHandle.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:InternalThread.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Diagnostics"
+                        name = "System.Diagnostics">
+                        <FileRef
+                           location = "group:StackTrace.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Debugger.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:StackFrame.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Security.Cryptography"
+                        name = "System.Security.Cryptography">
+                        <FileRef
+                           location = "group:RNGCryptoServiceProvider.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Runtime.InteropServices"
+                        name = "System.Runtime.InteropServices">
+                        <FileRef
+                           location = "group:Marshal.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:RuntimeInformation.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:GCHandle.h">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <Group
+                     location = "group:System"
+                     name = "System">
+                     <Group
+                        location = "group:System.Net"
+                        name = "System.Net">
+                        <FileRef
+                           location = "group:Dns.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.IO"
+                        name = "System.IO">
+                        <FileRef
+                           location = "group:FileSystemWatcher.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:Microsoft.Win32"
+                        name = "Microsoft.Win32">
+                        <FileRef
+                           location = "group:NativeMethods.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Net.Sockets"
+                        name = "System.Net.Sockets">
+                        <FileRef
+                           location = "group:Socket.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:SocketException.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Threading"
+                        name = "System.Threading">
+                        <FileRef
+                           location = "group:Semaphore.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Diagnostics"
+                        name = "System.Diagnostics">
+                        <FileRef
+                           location = "group:Stopwatch.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:FileVersionInfo.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Process.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:DefaultTraceListener.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:System.Net.NetworkInformation"
+                        name = "System.Net.NetworkInformation">
+                        <FileRef
+                           location = "group:MacOsIPInterfaceProperties.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:Mono.Net.Security"
+                        name = "Mono.Net.Security">
+                        <FileRef
+                           location = "group:MonoTlsProviderFactory.h">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:vm-utils"
+                  name = "vm-utils">
+                  <FileRef
+                     location = "group:MethodDefinitionKey.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:VmStringUtils.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:VmMethod.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DebugSymbolReader.h">
+                  </FileRef>
+                  <Group
+                     location = "group:icalls"
+                     name = "icalls">
+                     <Group
+                        location = "group:mscorlib"
+                        name = "mscorlib">
+                        <Group
+                           location = "group:System"
+                           name = "System">
+                           <FileRef
+                              location = "group:Math.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:MathF.h">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:System.Threading"
+                           name = "System.Threading">
+                           <FileRef
+                              location = "group:Interlocked.h">
+                           </FileRef>
+                        </Group>
+                     </Group>
+                  </Group>
+                  <FileRef
+                     location = "group:BlobReader.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:NativeSymbol.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:VmThreadUtils.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Debugger.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Finally.h">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:codegen"
+                  name = "codegen">
+                  <FileRef
+                     location = "group:il2cpp-codegen-common-small.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:il2cpp-codegen-metadata.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:il2cpp-codegen-common-big.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:il2cpp-codegen.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:il2cpp-codegen-il2cpp.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:il2cpp-codegen-common.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:il2cpp-codegen-tiny.h">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:mono-structs.h">
+               </FileRef>
+               <FileRef
+                  location = "group:il2cpp-sanitizers.h">
+               </FileRef>
+               <FileRef
+                  location = "group:il2cpp-pinvoke-support.h">
+               </FileRef>
+               <Group
+                  location = "group:vm"
+                  name = "vm">
+                  <FileRef
+                     location = "group:Type.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MemoryInformation.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MetadataLock.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:StackTrace.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Assembly.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:NonCachedCCWBase.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Liveness.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:GenericClass.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Enum.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Event.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Path.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Parameter.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LastError.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Field.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ClassInlines.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MetadataCache.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Method.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CCW.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ClassLibraryPAL.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Domain.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AssemblyName.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ActivationFactoryBase.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MarshalAlloc.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:PlatformInvoke.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:COM.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:RCW.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:GlobalMetadataFileInternals.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Runtime.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Monitor.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:COMEntryPoints.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Thread.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CCWBase.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Array.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Class.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CachedCCWBase.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:GenericContainer.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Object.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ThreadPoolMs.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:InternalCalls.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Property.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Module.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:WaitHandle.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Profiler.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:WindowsRuntime.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ComObjectBase.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Exception.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MetadataAlloc.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:GlobalMetadata.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Image.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Reflection.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ScopedThreadAttacher.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:WeakReference.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Random.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Il2CppHStringReference.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MetadataLoader.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:String.h">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:il2cpp-api-functions.h">
+               </FileRef>
+               <FileRef
+                  location = "group:il2cpp-tabledefs.h">
+               </FileRef>
+               <FileRef
+                  location = "group:il2cpp-normalization-tables.h">
+               </FileRef>
+               <Group
+                  location = "group:mono"
+                  name = "mono">
+                  <Group
+                     location = "group:ThreadPool"
+                     name = "ThreadPool">
+                     <FileRef
+                        location = "group:ThreadPoolMacros.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:threadpool-ms-io.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:ThreadPoolDataStructures.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:threadpool-ms-io-poll.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:threadpool-ms.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:ThreadPoolMonitorThread.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:ThreadPoolWorkerThread.h">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:MonoPosixHelper.h">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:debugger"
+                  name = "debugger">
+                  <FileRef
+                     location = "group:il2cpp-api-debugger.h">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:gc"
+                  name = "gc">
+                  <FileRef
+                     location = "group:gc_wrapper.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:GarbageCollector.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AppendOnlyGCHashMap.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Allocator.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:WriteBarrierValidation.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:GCHandle.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:WriteBarrier.h">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:os"
+                  name = "os">
+                  <FileRef
+                     location = "group:Time.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Semaphore.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Error.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SocketBridge.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Console.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MarshalStringAlloc.h">
+                  </FileRef>
+                  <Group
+                     location = "group:Posix"
+                     name = "Posix">
+                     <FileRef
+                        location = "group:Error.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:PosixHelpers.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:ConditionVariableImpl.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:FastReaderReaderWriterLockImpl.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SemaphoreImpl.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MutexImpl.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:PosixWaitObject.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SocketImpl.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:FileHandle.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:EventImpl.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:ThreadLocalValueImpl.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:ReaderWriterLockImpl.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:ThreadImpl.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:NetworkAccessHandlerStub.h">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:FastReaderReaderWriterLockImpl.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Debug.h">
+                  </FileRef>
+                  <Group
+                     location = "group:ClassLibraryPAL"
+                     name = "ClassLibraryPAL">
+                     <FileRef
+                        location = "group:pal_mirror_structs.h">
+                     </FileRef>
+                     <Group
+                        location = "group:brotli"
+                        name = "brotli">
+                        <Group
+                           location = "group:include"
+                           name = "include">
+                           <Group
+                              location = "group:brotli"
+                              name = "brotli">
+                              <FileRef
+                                 location = "group:port.h">
+                              </FileRef>
+                              <FileRef
+                                 location = "group:types.h">
+                              </FileRef>
+                              <FileRef
+                                 location = "group:encode.h">
+                              </FileRef>
+                              <FileRef
+                                 location = "group:decode.h">
+                              </FileRef>
+                           </Group>
+                        </Group>
+                        <Group
+                           location = "group:enc"
+                           name = "enc">
+                           <FileRef
+                              location = "group:hash_longest_match64_inc.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:cluster.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:backward_references.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:hash_to_binary_tree_inc.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:utf8_util.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:bit_cost_inc.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:find_match_length.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:port.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:bit_cost.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:brotli_bit_stream.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:fast_log.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:compress_fragment.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:static_dict_lut.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:static_dict.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:block_splitter_inc.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:quality.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:cluster_inc.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:context.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:metablock.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:literal_cost.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:block_encoder_inc.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:metablock_inc.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:hash_forgetful_chain_inc.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:hash_longest_match_quickly_inc.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:backward_references_hq.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:dictionary_hash.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:block_splitter.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:entropy_encode.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:compress_fragment_two_pass.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:hash_longest_match_inc.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:histogram.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:memory.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:command.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:write_bits.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:histogram_inc.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:prefix.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:hash.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:ringbuffer.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:entropy_encode_static.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:backward_references_inc.h">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:common"
+                           name = "common">
+                           <FileRef
+                              location = "group:version.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:constants.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:dictionary.h">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:dec"
+                           name = "dec">
+                           <FileRef
+                              location = "group:port.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:bit_reader.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:context.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:transform.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:prefix.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:state.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:huffman.h">
+                           </FileRef>
+                        </Group>
+                     </Group>
+                     <FileRef
+                        location = "group:pal_platform.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:pal_sizecheck.h">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:Messages.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:StackTrace.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Locale.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SystemCertificates.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:TimeZone.h">
+                  </FileRef>
+                  <Group
+                     location = "group:baselib"
+                     name = "baselib">
+                     <FileRef
+                        location = "group:FastReaderReaderWriterLockImpl.h">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:Lumin"
+                     name = "Lumin">
+                     <FileRef
+                        location = "group:File.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Lifecycle.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Automation.h">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:OSX"
+                     name = "OSX">
+                     <FileRef
+                        location = "group:pal_darwin.h">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:Event.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Path.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LastError.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Cryptography.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CrashHelpers.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SynchronizationContext.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:WaitStatus.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:File.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ConditionVariable.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Encoding.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CpuInfo.h">
+                  </FileRef>
+                  <Group
+                     location = "group:Std"
+                     name = "Std">
+                     <FileRef
+                        location = "group:ThreadImpl.h">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:ThreadLocalValue.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MarshalAlloc.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:COM.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Environment.h">
+                  </FileRef>
+                  <Group
+                     location = "group:WindowsGames"
+                     name = "WindowsGames">
+                     <FileRef
+                        location = "group:Win32ApiWindowsGamesEmulation.h">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:Directory.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Thread.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LibraryLoader.h">
+                  </FileRef>
+                  <Group
+                     location = "group:Emscripten"
+                     name = "Emscripten">
+                     <FileRef
+                        location = "group:pal_emscripten.h">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:Handle.h">
+                  </FileRef>
+                  <Group
+                     location = "group:Linux"
+                     name = "Linux">
+                     <FileRef
+                        location = "group:pal_linux.h">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:ErrorCodes.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ReaderWriterLock.h">
+                  </FileRef>
+                  <Group
+                     location = "group:WinRT"
+                     name = "WinRT">
+                     <FileRef
+                        location = "group:Win32ApiWinRTEmulation.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SynchronousOperation.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:ReferenceCounter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:BrokeredFileSystem.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:WinRTVector.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Win32ApiSharedEmulation.h">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:Android"
+                     name = "Android">
+                     <FileRef
+                        location = "group:pal_android.h">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:ConsoleExtension.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Initialize.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:NativeMethods.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MemoryMappedFile.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Process.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Memory.h">
+                  </FileRef>
+                  <Group
+                     location = "group:Generic"
+                     name = "Generic">
+                     <FileRef
+                        location = "group:SocketImpl.h">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:ReaderWriterLockImpl.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:FileSystemWatcher.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Mutex.h">
+                  </FileRef>
+                  <Group
+                     location = "group:Win32"
+                     name = "Win32">
+                     <FileRef
+                        location = "group:ConditionVariableImpl.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:FastReaderReaderWriterLockImpl.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:WindowsHeaders.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SemaphoreImpl.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MutexImpl.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SocketImpl.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:DllMain.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:EventImpl.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:WindowsHelpers.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:ThreadLocalValueImpl.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:ReaderWriterLockImpl.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:ThreadImpl.h">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:WindowsRuntime.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:FastReaderReaderWriterLock.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Assert.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Socket.h">
+                  </FileRef>
+                  <Group
+                     location = "group:c-api"
+                     name = "c-api">
+                     <FileRef
+                        location = "group:LibraryLoader-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Path-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Messages-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Semaphore-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Process-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:il2cpp-config-platforms.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:WaitStatus-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Event-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:CpuInfo-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Mutex-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:File-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Console-c-api.h">
+                     </FileRef>
+                     <Group
+                        location = "group:tests"
+                        name = "tests">
+                        <FileRef
+                           location = "group:PathHelper.h">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:ConditionVariable-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SystemCertificates-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Handle-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Directory-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:ThreadLocalValue-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:il2cpp-config-api-platforms.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:NativeMethods-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Allocator.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:COM-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Socket-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Locale-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Environment-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MemoryMappedFile-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Debug-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Atomic-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:OSGlobalEnums.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Thread-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Time-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Cryptography-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Error-c-api.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Memory-c-api.h">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:Image.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Atomic.h">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:il2cpp-object-internals.h">
+               </FileRef>
+               <FileRef
+                  location = "group:il2cpp-runtime-metadata.h">
+               </FileRef>
+               <Group
+                  location = "group:metadata"
+                  name = "metadata">
+                  <FileRef
+                     location = "group:GenericSharing.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Il2CppGenericContextHash.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Il2CppTypeHash.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Il2CppGenericClassHash.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Il2CppGenericInstCompare.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:GenericMethod.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Il2CppSignature.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ArrayMetadata.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Il2CppGenericMethodHash.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CustomAttributeCreator.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Il2CppTypeCompare.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:GenericMetadata.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Il2CppGenericContextCompare.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:FieldLayout.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Il2CppGenericMethodCompare.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Il2CppGenericInstHash.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Il2CppGenericClassCompare.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CustomAttributeDataReader.h">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:il2cpp-blob.h">
+               </FileRef>
+               <FileRef
+                  location = "group:char-conversions.h">
+               </FileRef>
+            </Group>
+         </Group>
+         <FileRef
+            location = "group:RegisterFeatures.h">
+         </FileRef>
+         <Group
+            location = "group:com.unity.services.core"
+            name = "com.unity.services.core">
+            <Group
+               location = "group:Runtime"
+               name = "Runtime">
+               <Group
+                  location = "group:Device"
+                  name = "Device">
+                  <Group
+                     location = "group:UserIdProviders"
+                     name = "UserIdProviders">
+                     <FileRef
+                        location = "group:NSUserDefaults.mm">
+                     </FileRef>
+                  </Group>
+               </Group>
+            </Group>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:LaunchScreen-iPad.png">
+      </FileRef>
+      <Group
+         location = "group:MainApp"
+         name = "MainApp">
+         <FileRef
+            location = "group:main.mm">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Unity-iPhone.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:Unity-iPhone"
+         name = "Unity-iPhone">
+         <Group
+            location = "group:ARReferenceImages.xcassets"
+            name = "ARReferenceImages.xcassets">
+            <Group
+               location = "group:TestReferenceImageLibrary_8B9944C7-D665-7F40-A7B9-DB0BF8050C9E.arresourcegroup"
+               name = "TestReferenceImageLibrary_8B9944C7-D665-7F40-A7B9-DB0BF8050C9E.arresourcegroup">
+               <Group
+                  location = "group:one_024ED3F1-719E-334E-89C0-9122CA073885.arreferenceimage"
+                  name = "one_024ED3F1-719E-334E-89C0-9122CA073885.arreferenceimage">
+                  <FileRef
+                     location = "group:one.png">
+                  </FileRef>
+               </Group>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Images.xcassets"
+            name = "Images.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Icon-iPad-152.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-iPad-76.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-iPhone-180.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-iPhone-120.png">
+               </FileRef>
+               <FileRef
+                  location = "group:Icon-iPad-167.png">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Data"
+         name = "Data">
+         <Group
+            location = "group:Managed"
+            name = "Managed">
+            <FileRef
+               location = "group:TypesInScenes.xml">
+            </FileRef>
+            <FileRef
+               location = "group:SerializedTypes.xml">
+            </FileRef>
+            <Group
+               location = "group:Resources"
+               name = "Resources">
+               <FileRef
+                  location = "group:Newtonsoft.Json.dll-resources.dat">
+               </FileRef>
+               <FileRef
+                  location = "group:mscorlib.dll-resources.dat">
+               </FileRef>
+               <FileRef
+                  location = "group:System.Data.dll-resources.dat">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:UnityLinkerToEditorData.json">
+            </FileRef>
+            <Group
+               location = "group:mono"
+               name = "mono">
+               <Group
+                  location = "group:4.0"
+                  name = "4.0">
+                  <FileRef
+                     location = "group:machine.config">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:EditorToUnityLinkerData.json">
+            </FileRef>
+            <FileRef
+               location = "group:response.rsp">
+            </FileRef>
+            <Group
+               location = "group:Metadata"
+               name = "Metadata">
+               <FileRef
+                  location = "group:global-metadata.dat">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:MethodsToPreserve.xml">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:globalgamemanagers">
+         </FileRef>
+         <FileRef
+            location = "group:boot.config">
+         </FileRef>
+         <FileRef
+            location = "group:RuntimeInitializeOnLoads.json">
+         </FileRef>
+         <FileRef
+            location = "group:resources.assets">
+         </FileRef>
+         <Group
+            location = "group:Resources"
+            name = "Resources">
+            <FileRef
+               location = "group:unity_builtin_extra">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:unity default resources">
+         </FileRef>
+         <FileRef
+            location = "group:ScriptingAssemblies.json">
+         </FileRef>
+         <FileRef
+            location = "group:sharedassets0.assets.resS">
+         </FileRef>
+         <FileRef
+            location = "group:sharedassets0.assets">
+         </FileRef>
+         <FileRef
+            location = "group:level0.resS">
+         </FileRef>
+         <FileRef
+            location = "group:level0">
+         </FileRef>
+         <FileRef
+            location = "group:resources.assets.resS">
+         </FileRef>
+         <Group
+            location = "group:Raw"
+            name = "Raw">
+            <FileRef
+               location = "group:UnityServicesProjectConfiguration.json">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:globalgamemanagers.assets">
+         </FileRef>
+         <Group
+            location = "group:UnitySubsystems"
+            name = "UnitySubsystems">
+            <Group
+               location = "group:UnityARKit"
+               name = "UnityARKit">
+               <FileRef
+                  location = "group:UnitySubsystemsManifest.json">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:Info.plist">
+      </FileRef>
+      <Group
+         location = "group:UnityFramework"
+         name = "UnityFramework">
+         <FileRef
+            location = "group:UnityFramework.h">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+   </Group>
    <FileRef
       location = "group:UnityLibrary/Unity-iPhone.xcodeproj">
    </FileRef>
