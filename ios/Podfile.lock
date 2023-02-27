@@ -819,7 +819,7 @@ SPEC CHECKSUMS:
   FirebaseCoreInternal: e463f41bb935cd049505bf7e9a5bdd7dcea90df6
   FirebaseFirestore: 244f71ff14ef44f39e00b44d356eac708ce03103
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
-  flutter_unity_widget: e509f3109933aa0c63b1bc149ca3d5b90fb68543
+  flutter_unity_widget: 6ac19c38d8bf8aa0bc84c4f0e8022f2e2987fade
   google_sign_in_ios: 63e49658400eb806dd30054dc56f8baee3025508
   GoogleSignIn: 5651ce3a61e56ca864160e79b484cd9ed3f49b7a
   GoogleUtilities: c2bdc4cf2ce786c4d2e6b3bcfd599a25ca78f06f
