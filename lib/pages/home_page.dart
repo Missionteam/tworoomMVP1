@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_unity_widget/flutter_unity_widget.dart';
 
 import 'package:go_router/go_router.dart';
 
@@ -21,13 +20,13 @@ class HomePage extends ConsumerStatefulWidget {
 class HomePageState extends ConsumerState<HomePage> {
   static final GlobalKey<ScaffoldState> _scaffoldKey =
       GlobalKey<ScaffoldState>();
-  late UnityWidgetController unityWidgetController;
+  // late UnityWidgetController unityWidgetController;
   bool isWoman = true;
-  @override
-  void dispose() {
-    unityWidgetController.dispose();
-    super.dispose();
-  }
+  // @override
+  // void dispose() {
+  //   unityWidgetController.dispose();
+  //   super.dispose();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -55,10 +54,11 @@ class HomePageState extends ConsumerState<HomePage> {
                       child: Stack(
                         alignment: Alignment.center,
                         children: [
-                          UnityWidget(
-                            onUnityCreated: onUnityCreated,
-                            fullscreen: false,
-                          ),
+                          // UnityWidget(
+                          //   onUnityCreated: onUnityCreated,
+                          //   fullscreen: false,
+                          // ),
+                          ref.watch(whatNowProvider),
                           GestureDetector(
                             onTap: () => showWhatNow(context),
                             onHorizontalDragEnd: (details) {
@@ -218,72 +218,76 @@ class HomePageState extends ConsumerState<HomePage> {
         });
   }
 
-  void setActive(String object) {
-    ///Activeは最後に実行。
-    unityWidgetController.postMessage(
-      'ActiveChanger',
-      'VanishWaitGirl',
-      '',
-    );
-    unityWidgetController.postMessage(
-      'ActiveChanger',
-      'VanishWalkGirl',
-      '',
-    );
-    unityWidgetController.postMessage(
-      'ActiveChanger',
-      'VanishWorkGirl',
-      '',
-    );
-    unityWidgetController.postMessage(
-      'ActiveChanger',
-      'VanishSleepGirl',
-      '',
-    );
-    unityWidgetController.postMessage(
-      'ActiveChanger',
-      'VanishWaitBoy',
-      '',
-    );
-    unityWidgetController.postMessage(
-      'ActiveChanger',
-      'VanishWalkBoy',
-      '',
-    );
-    unityWidgetController.postMessage(
-      'ActiveChanger',
-      'VanishWorkBoy',
-      '',
-    );
-    unityWidgetController.postMessage(
-      'ActiveChanger',
-      'VanishSleepBoy',
-      '',
-    );
-
-    ///Active
-    unityWidgetController.postMessage(
-      'ActiveChanger',
-      'Active${object}',
-      object,
-    );
+  void setActive(String stampname) {
+    final currentUserDoc = ref.watch(CurrentAppUserDocProvider).value;
+    currentUserDoc?.reference.update({'whatNow': '${stampname}.jpg'});
   }
+  // void setActive(String object) {
+  //   ///Activeは最後に実行。
+  //   unityWidgetController.postMessage(
+  //     'ActiveChanger',
+  //     'VanishWaitGirl',
+  //     '',
+  //   );
+  //   unityWidgetController.postMessage(
+  //     'ActiveChanger',
+  //     'VanishWalkGirl',
+  //     '',
+  //   );
+  //   unityWidgetController.postMessage(
+  //     'ActiveChanger',
+  //     'VanishWorkGirl',
+  //     '',
+  //   );
+  //   unityWidgetController.postMessage(
+  //     'ActiveChanger',
+  //     'VanishSleepGirl',
+  //     '',
+  //   );
+  //   unityWidgetController.postMessage(
+  //     'ActiveChanger',
+  //     'VanishWaitBoy',
+  //     '',
+  //   );
+  //   unityWidgetController.postMessage(
+  //     'ActiveChanger',
+  //     'VanishWalkBoy',
+  //     '',
+  //   );
+  //   unityWidgetController.postMessage(
+  //     'ActiveChanger',
+  //     'VanishWorkBoy',
+  //     '',
+  //   );
+  //   unityWidgetController.postMessage(
+  //     'ActiveChanger',
+  //     'VanishSleepBoy',
+  //     '',
+  //   );
 
-  void setVanish(String object) {
-    unityWidgetController.postMessage(
-      'ActiveChanger',
-      'Vanish${object}',
-      object,
-    );
-  }
+  //   ///Active
+  //   unityWidgetController.postMessage(
+  //     'ActiveChanger',
+  //     'Active${object}',
+  //     object,
+  //   );
+  // }
 
-  void onUnitySceneLoaded(SceneLoaded scene) {
-    print('Received scene loaded from unity: ${scene.name}');
-    print('Received scene loaded from unity buildIndex: ${scene.buildIndex}');
-  }
+  // void setVanish(String object) {
+  //   unityWidgetController.postMessage(
+  //     'ActiveChanger',
+  //     'Vanish${object}',
+  //     object,
+  //   );
+  // }
 
-  void onUnityCreated(controller) {
-    controller.resume();
-    unityWidgetController = controller;
-  }
+  // void onUnitySceneLoaded(SceneLoaded scene) {
+  //   print('Received scene loaded from unity: ${scene.name}');
+  //   print('Received scene loaded from unity buildIndex: ${scene.buildIndex}');
+  // }
+
+  // void onUnityCreated(controller) {
+  //   controller.resume();
+  //   unityWidgetController = controller;
+  // }
 }

@@ -4,7 +4,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_unity_widget/flutter_unity_widget.dart';
 
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -24,7 +23,6 @@ class ChatRoomPage extends ConsumerStatefulWidget {
 
 class _ChatRoomPageState extends ConsumerState<ChatRoomPage> {
   //get onUnityCreated => null;
-  late UnityWidgetController _unityWidgetController;
 
   Future<void> sendPost(String text) async {
     // まずは user という変数にログイン中のユーザーデータを格納します
@@ -246,9 +244,5 @@ class _ChatRoomPageState extends ConsumerState<ChatRoomPage> {
       ),
       // */
     );
-  }
-
-  void onUnityCreated(controller) {
-    _unityWidgetController = controller;
   }
 }

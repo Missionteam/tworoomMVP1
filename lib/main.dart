@@ -4,7 +4,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:go_router/go_router.dart';
 
 import 'firebase_options.dart';
-import 'menu_screen.dart';
 import 'pages/auth/auth_checker.dart';
 import 'pages/chat_page.dart';
 import 'pages/chat_room_page.dart';
@@ -13,11 +12,6 @@ import 'pages/my_page.dart';
 import 'pages/myroom_page.dart';
 import 'pages/room_grid_page.dart';
 import 'pages/room_page2.dart';
-import 'screens/api_screen.dart';
-import 'screens/loader_screen.dart';
-import 'screens/no_interaction_screen.dart';
-import 'screens/orientation_screen.dart';
-import 'screens/simple_screen.dart';
 import 'widgets/fundomental/BtmNavigation.dart';
 
 //      home: const SignInPage(),
@@ -157,28 +151,5 @@ class MyApp extends StatelessWidget {
     //      home: const MainPage(),
     //    );
     //  }
-  }
-}
-
-class MyApp2 extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Unity Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      initialRoute: '/',
-      routes: {
-        '/': (context) => MenuScreen(),
-        '/simple': (context) => SimpleScreen(),
-        '/loader': (context) => LoaderScreen(),
-        '/orientation': (context) => OrientationScreen(),
-        '/api': (context) => ApiScreen(),
-        '/none': (context) => NoInteractionScreen(),
-      },
-    );
   }
 }

@@ -57,3 +57,14 @@ final EngageStampProvider = Provider((ref) {
   final stampname = stampnamevalue ?? 'NoStamp.png';
   return Image.asset('images/${stampname}');
 });
+
+final whatNowNameProvider = FutureProvider<String?>((ref) {
+  final currentAppUserDoc = ref.watch(CurrentAppUserDocProvider).value;
+  return currentAppUserDoc?.get('whatNow');
+});
+
+final whatNowProvider = Provider((ref) {
+  final stampnamevalue = ref.watch(whatNowNameProvider).value;
+  final stampname = stampnamevalue ?? 'NoStamp.png';
+  return Image.asset('images/whatNowStamp/${stampname}');
+});

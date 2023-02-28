@@ -40,9 +40,8 @@ class PostWidget extends ConsumerWidget {
               children: [
                 Row(
                   children: [
-                    const Text(
-                      'まさと',
-                      // post.posterName,
+                    Text(
+                      post.posterName,
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           height: 1.5,
